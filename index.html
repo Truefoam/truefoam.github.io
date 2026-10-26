@@ -967,7 +967,7 @@ a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text
         <div>
           <h3 style="margin-bottom:10px">Installer</h3>
           <ol class="steps">
-            <li><span>Installer et lancer Docker Desktop (pastille « Engine running » verte).</span></li>
+            <li><span>Installer et lancer Docker Desktop (sa pastille verte « Engine running » indique que Docker est prêt).</span></li>
             <li><span>Dézipper <span class="mono">TrueFOAM-MC-Windows.zip</span> et lancer <span class="mono">TrueFOAM-MC.exe</span>.</span></li>
             <li><span>Panneau Exécution : choisir la version d'OpenFOAM, puis ruban Exécuter : « Construire le moteur » jusqu'au vert « Moteur prêt » (l'image officielle de la version est téléchargée si elle manque).</span></li>
           </ol>
@@ -991,8 +991,8 @@ a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text
 
     <div class="prod-body">
       <div class="stack read">
-        <p>TrueFoam Engine est le <b>solveur CFD propriétaire</b> de la famille TrueFoam, en développement. Sa page accueillera
-          les téléchargements et la validation.</p>
+        <p>TrueFoam Engine est le <b>solveur CFD propriétaire</b> de la famille TrueFoam, en développement. Son téléchargement et
+          sa validation complète seront publiés à sa sortie.</p>
         <p>Son interface reprend l'environnement de travail de TrueFoam GUI : étude guidée, vue 3D et résultats viennent
           du même squelette d'interface.</p>
       </div>
@@ -1007,13 +1007,13 @@ a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text
           <p><b>Nouvelle loi de paroi : la traînée ne dépend presque plus de la finesse du maillage.</b></p>
           <ul class="kpis">
             <li><b>8,4 cm² ± 2,5 %</b><span>S·Cx du V2V Speeder 3″ à 400 km/h, calcul convergé (mailles de 0,79 mm) ;
-              8,1 cm² avec des mailles de 0,40 mm (4 % d'écart) ; 8,4 cm² avec le calcul de référence de TrueFoam GUI</span></li>
+              8,1 cm² avec des mailles de 0,40 mm (4 % d'écart) ; le même cas calculé avec TrueFoam GUI donne 8,4 cm²</span></li>
             <li><b>1,54 → 1,64 cm²</b><span>S·Cx d'un fuselage 6:1, mailles de 1,17 puis 0,59 mm ; valeur d'abaque
               ≈ 1,55 cm²</span></li>
           </ul>
           <p class="note">Calculs sur une carte graphique grand public (GTX 1650). Résultats préliminaires, en cours de
-            validation : deux formes contrôlées, vent de face, comparées à un autre logiciel de calcul et pas encore à
-            une mesure en soufflerie.</p>
+            validation : deux formes contrôlées, vent de face, comparées aux calculs de TrueFoam GUI (et, pour le
+            fuselage, à une valeur d'abaque), pas encore à une mesure en soufflerie.</p>
         </div>
       </div>
     </div>
@@ -1031,7 +1031,7 @@ a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text
       <li class="pas">
         <div class="pas-texte"><h3>Installer TrueFoam GUI</h3><ul class="feat">
           <li>Windows 10 ou 11, 64 bits, 16 Go de RAM conseillés.</li>
-          <li>Installer Docker Desktop (option WSL 2) et le lancer : pastille « Engine running » verte.</li>
+          <li>Installer Docker Desktop (option WSL 2) et le lancer : sa pastille verte « Engine running » indique que Docker est prêt.</li>
           <li>Une seule fois, dans PowerShell : <span class="mono">docker pull opencfd/openfoam-default:2412</span>
             (l'image officielle d'OpenFOAM® v2412, téléchargée par vous).</li>
           <li>Télécharger <span class="mono">TrueFOAM-Windows.zip</span>, le dézipper en gardant le dossier entier, puis
@@ -1182,7 +1182,7 @@ a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text
             TrueFoam, code non publié. Son interface reprend l'environnement de travail de TrueFoam GUI : étude guidée,
             vue 3D et résultats.</p>
           <p class="nouv-ligne"><b>Nouveauté :</b> traînée presque indépendante du maillage (V2V : 8,4 cm² ± 2,5 %,
-            calcul convergé, pour 8,4 avec TrueFoam GUI). Résultats préliminaires.</p>
+            calcul convergé ; TrueFoam GUI donne 8,4 cm² sur le même cas). Résultats préliminaires.</p>
           <div class="actions"><span class="avenir">Téléchargement à venir</span>
             <a class="lien" href="#engine">Fiche produit →</a></div>
         </div>
