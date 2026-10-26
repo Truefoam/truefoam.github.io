@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <title>TrueFoam — FlowDynamics Desktop</title>
-<meta name="description" content="TrueFoam, FlowDynamics Desktop. Dynamique des fluides et analyse aérodynamique : la puissance de la CFD aéronautique associée à la rigueur scientifique opérée sur votre station de travail. Traînée, portance, pression et écoulement autour de toute forme en STL, sans ligne de commande. TrueFoam GUI, pour OpenFOAM v2412, en service ; drones FPV en application phare.">
+<meta name="description" content="TrueFoam, FlowDynamics Desktop. Dynamique des fluides et analyse aérodynamique : la puissance de la CFD aéronautique associée à la rigueur scientifique opérée sur votre station de travail. Traînée, portance, pression et écoulement autour de toute forme en STL, sans ligne de commande. TrueFoam GUI, pour OpenFOAM v2412, disponible ; drones FPV en application phare.">
 <link rel="canonical" href="https://truefoam.github.io/">
 <meta property="og:url" content="https://truefoam.github.io/">
 <meta property="og:image" content="https://truefoam.github.io/assets/app_lignes.jpg">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="TrueFoam">
 <meta property="og:title" content="TrueFoam — FlowDynamics Desktop">
-<meta property="og:description" content="TrueFoam, FlowDynamics Desktop. Dynamique des fluides et analyse aérodynamique : la puissance de la CFD aéronautique associée à la rigueur scientifique opérée sur votre station de travail. Traînée, portance, pression et écoulement autour de toute forme en STL, sans ligne de commande. TrueFoam GUI, pour OpenFOAM v2412, en service ; drones FPV en application phare.">
+<meta property="og:description" content="TrueFoam, FlowDynamics Desktop. Dynamique des fluides et analyse aérodynamique : la puissance de la CFD aéronautique associée à la rigueur scientifique opérée sur votre station de travail. Traînée, portance, pression et écoulement autour de toute forme en STL, sans ligne de commande. TrueFoam GUI, pour OpenFOAM v2412, disponible ; drones FPV en application phare.">
 <meta name="theme-color" content="#1f5fa8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -558,6 +558,52 @@ table { font-variant-numeric: tabular-nums; }
 .duo5 .mini { grid-template-columns: repeat(5, auto); grid-auto-flow: column; grid-template-rows: auto auto; gap: 2px 18px; }
 @media (max-width: 960px) { .duo5 { grid-template-columns: minmax(0, 1fr); } .mini5 { display: none; } .legende5 { margin-right: 0; }
   .hero4-grille { grid-template-columns: minmax(0, 1fr); } .duo5 .mini { grid-template-columns: repeat(3, auto); grid-auto-flow: row; grid-template-rows: none; } }
+
+/* v6 : deuxième avis de Fable */
+.pourqui5 { color: var(--muted); max-width: 52ch; margin-top: -4px; }
+.chiffres4 a { color: inherit; }
+a.badge { text-decoration: none; } a.badge:hover { filter: brightness(.96); text-decoration: underline; }
+.fiche-synth .col { align-content: start; }
+.fiche-synth h4 { margin: 4px 0 -6px; }
+.etude5 .haut5-t { justify-items: stretch; }
+.duo5 .mini dd { white-space: nowrap; } .duo5 .mini dd:first-of-type { font-size: 1.15rem; }
+.table-ref .badge { white-space: nowrap; }
+.formes-v td .note { display: block; font-size: .78rem; }
+@media (max-width: 1100px) { #essais .table-ref .ref, #essais .refs5 .table-ref thead th:nth-child(2) { display: table-cell; } }
+.defile { display: none; font-size: .8rem; color: var(--muted); margin: 6px 0 0; text-align: right; }
+@media (max-width: 720px) { .defile { display: block; }
+  .sommaire-fiches { -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent); mask-image: linear-gradient(90deg, #000 82%, transparent); }
+  #essais .table-ref .crit, #essais .refs5 .table-ref thead th:nth-child(5) { display: table-cell; }
+  #essais .table-ref table { min-width: 560px; } }
+@media (max-width: 720px) { .formes-v td .note { display: none; } .formes-v table { font-size: .84rem; } .formes-v th, .formes-v td { padding-inline: 6px; } }
+.haut5 { grid-template-columns: minmax(0, 1fr); }
+.haut5-t { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 14px 26px; align-items: start; justify-items: stretch; }
+.haut5-t > div { display: grid; gap: 10px; justify-items: start; }
+.paire5 { display: flex; gap: 18px; align-items: flex-start; }
+.paire5 figure { flex-basis: 0; flex-shrink: 1; min-width: 0; }
+.resume5 { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; padding: 16px 20px; border: 1px solid var(--line);
+  border-radius: 14px; background: var(--surface); text-decoration: none; color: inherit; margin: 6px 0 4px; }
+.resume5:hover { border-color: var(--blue); }
+.resume5 .t { font: 700 1.1rem var(--font-display); margin-right: 6px; }
+.resume5 ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.resume5 li { display: flex; align-items: center; gap: 8px; } .resume5 li b { font: 700 1.25rem var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; }
+.resume5-g { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px 32px; margin-top: 18px; }
+.resume5-g h3 { margin-bottom: 10px; }
+@media (max-width: 960px) { .duo5 .mini { grid-template-columns: auto 1fr; grid-auto-flow: row; grid-template-rows: none; gap: 2px 14px; } }
+@media (max-width: 720px) {
+  .haut5-t { grid-template-columns: minmax(0, 1fr); }
+  .paire5 { flex-direction: column; } .paire5 figure { flex: none !important; width: 100%; }
+  .sommaire-fiches { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 8px 0; }
+  .sommaire-fiches::-webkit-scrollbar { display: none; } .sommaire-fiches a { white-space: nowrap; flex: none; }
+}
+/* page Validation */
+.page-v { padding: 46px 0 8px; } .page-v h1 { font: 700 clamp(2rem, 4vw, 2.8rem)/1.1 var(--font-display); margin: 8px 0 12px; }
+.retour { display: inline-block; margin-bottom: 14px; }
+.sommaire-v { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+.sommaire-v a { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); font-size: .92rem; }
+.sommaire-v a:hover { border-color: var(--blue); color: var(--blue); }
+.vdeux { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px 32px; align-items: start; }
+.vdeux > * { min-width: 0; }
 </style>
 </head>
 <body>
@@ -569,7 +615,7 @@ table { font-variant-numeric: tabular-nums; }
       <a href="#fonctions">Fonctions</a><a href="#etudes">Études</a><a href="#validation">Validation</a>
       <a href="#mode-emploi">Mode d'emploi</a><a href="#telechargements">Téléchargements</a>
     </div>
-    <a class="btn primary petit" href="#telechargements">Télécharger</a>
+    <a class="btn ghost petit" href="#telechargements">Télécharger</a>
   </div>
 </nav>
 
@@ -581,6 +627,8 @@ table { font-variant-numeric: tabular-nums; }
       <h1>Dynamique des fluides et <em>analyse aérodynamique</em>&nbsp;:</h1>
       <p class="tech">La puissance de la CFD aéronautique associée à la rigueur scientifique opérée sur votre station
         de travail.</p>
+      <p class="pourqui5">Pour les bureaux d'études, les ingénieurs et les passionnés de drones FPV : votre STL calculé
+        sur votre PC Windows, sans ligne de commande.</p>
       <div class="cta">
         <a class="btn primary" href="https://github.com/Jschmiedd/TrueFoam-GUI/releases" target="_blank" rel="noopener">Télécharger TrueFoam GUI</a>
         <a class="btn ghost" href="#fonctions">Voir les fonctions</a>
@@ -598,10 +646,10 @@ table { font-variant-numeric: tabular-nums; }
   </div>
   <div class="wrap">
     <ul class="chiffres4 reveal">
-      <li><b>62,6&nbsp;cm²</b><span>S·Cx du V2V Speeder 3″ à 35°, 120 km/h, calcul convergé</span></li>
-      <li><b>8</b><span>versions d'OpenFOAM® proposées par TrueFoam GUI Multi-Core</span></li>
-      <li><b>±1&nbsp;%</b><span>d'écart entre les versions openfoam.com validées</span></li>
+      <li><b>7 sur 13</b><span>essais validés face à une référence ; les autres sont publiés aussi (<a href="validation.html">détail</a>)</span></li>
+      <li><b>82&nbsp;min</b><span>calcul réel du V2V 3″ avec les réglages par défaut (1,45 M cellules, 4 cœurs, PC partagé avec d'autres calculs)</span></li>
       <li><b>5</b><span>couches limites posées par défaut, maillage automatique</span></li>
+      <li><b>8</b><span>versions d'OpenFOAM® proposées par TrueFoam GUI Multi-Core</span></li>
     </ul>
   </div>
 </header>
@@ -618,7 +666,7 @@ table { font-variant-numeric: tabular-nums; }
       <a href="#f-eau">Eau</a><a href="#f-thermique">Thermique</a>
     </nav>
     <article class="fiche reveal" id="f-aero">
-      <header class="fiche-tete"><span class="badge ok">Validé</span><h3>Aérodynamique externe</h3><p>Traînée, portance et écoulement de l'air autour d'un objet isolé, en RANS k-ω SST (stationnaire, instationnaire en option), à partir d'un STL fermé.</p></header>
+      <header class="fiche-tete"><a class="badge ok" href="validation.html" title="Voir la page Validation">Validé</a><h3>Aérodynamique externe</h3><p>Traînée, portance et écoulement de l'air autour d'un objet isolé, en RANS k-ω SST (stationnaire, instationnaire en option), à partir d'un STL fermé.</p></header>
       <div class="fiche-synth">
         <div class="col"><ul class="kpis"><li><b>&lt; 3&nbsp;%</b><span>variation de la traînée sur les 100 dernières itérations : critère de convergence</span></li><li><b>1,45&nbsp;M</b><span>cellules, maillage automatique</span></li></ul><h4>Ce que vous obtenez</h4>
           <ul class="feat"><li>Traînée et portance en N, S·Cx, Cx équivalent ; air standard, altitude et température, ou ρ et ν imposés.</li><li>Carte de Cp et frottement, coupes, coupe libre à la souris, lignes de courant animées, tourbillons, y+.</li><li>Plusieurs inclinaisons en une étude, polaire, balayage de vitesses (loi F = k·V²).</li><li>Traînée par pièce, comparaison de deux calculs point par point.</li></ul>
@@ -649,35 +697,35 @@ table { font-variant-numeric: tabular-nums; }
       </video>
     </div></article>
     <article class="fiche reveal" id="f-maillage">
-      <header class="fiche-tete"><span class="badge neutre">Cohérent</span><h3>Maillage et couches limites</h3><p>Boîte à air dimensionnée automatiquement (obstruction contrôlée), raffinement autour de l'objet et du sillage, 5 couches limites posées par défaut.</p></header>
+      <header class="fiche-tete"><a class="badge neutre" href="validation.html" title="Voir la page Validation">Cohérent</a><h3>Maillage et couches limites</h3><p>Boîte à air dimensionnée automatiquement (obstruction contrôlée), raffinement autour de l'objet et du sillage, 5 couches limites posées par défaut.</p></header>
       <div class="fiche-synth">
-        <div class="col"><ul class="kpis"><li><b>5</b><span>couches limites par défaut</span></li><li><b>65&nbsp;%</b><span>de la surface du V2V couverte de couches</span></li><li><b>+26&nbsp;%</b><span>de S·Cx avec couches (49,5 → 62,3 cm²)</span></li><li><b>0,09 → 0,27</b><span>Cx de la sphère sans puis avec couches</span></li></ul><h4>Ce que vous obtenez</h4>
+        <div class="col"><ul class="kpis"><li><b>5</b><span>couches limites par défaut</span></li><li><b>65&nbsp;%</b><span>de la surface du V2V couverte de couches</span></li><li><b>+26&nbsp;%</b><span>de S·Cx du V2V grâce aux couches (49,5 → 62,6 cm², réglages par défaut)</span></li></ul><h4>Ce que vous obtenez</h4>
           <ul class="feat"><li>Estimation des cellules, de la durée et de la mémoire avant de lancer.</li><li>« Mailler seulement » pour contrôler le maillage, bilan de qualité (non-orthogonalité, asymétrie).</li><li>Zones de raffinement (boîte, sphère, cylindre) et arêtes vives.</li></ul>
-          <p class="note">Arêtes vives (cadre, plaques) : l'écart baisse avec le maillage. Formes rondes et lisses : sous-estimées, même avec couches (sphère 0,27 et cylindre 0,53 pour 0,47 et 0,8) ; c'est publié dans la validation.</p></div>
-        <div class="col"><figure class="graphe-fig"><figcaption class="gt">Formes simples à 120 km/h, maillage fin, sans couches limites : Cx calculé et référence</figcaption><svg class="graphe" viewBox="0 0 560 206" role="img" aria-label="Formes simples à 120 km/h, maillage fin, sans couches limites : Cx calculé et référence"><line x1="150.0" x2="150.0" y1="22" y2="182" stroke="#d6dfeb"/><text x="150.0" y="198" text-anchor="middle" class="ax">0</text><line x1="225.0" x2="225.0" y1="22" y2="182" stroke="#d6dfeb"/><text x="225.0" y="198" text-anchor="middle" class="ax">0,35</text><line x1="300.0" x2="300.0" y1="22" y2="182" stroke="#d6dfeb"/><text x="300.0" y="198" text-anchor="middle" class="ax">0,7</text><line x1="375.0" x2="375.0" y1="22" y2="182" stroke="#d6dfeb"/><text x="375.0" y="198" text-anchor="middle" class="ax">1,05</text><line x1="450.0" x2="450.0" y1="22" y2="182" stroke="#d6dfeb"/><text x="450.0" y="198" text-anchor="middle" class="ax">1,4</text><text x="140" y="45" text-anchor="end" class="lib">Plaque 100×100×5</text><rect x="150" y="32" width="261.4" height="18" rx="4" fill="#1f5fa8"><title>Plaque 100×100×5 : Cx calculé 1,22, référence 1,17</title></rect><line x1="400.7" x2="400.7" y1="27" y2="55" stroke="#15233b" stroke-width="2.5"/><text x="419.4" y="46" class="val">1,22 / réf. 1,17 · +4 %</text><text x="140" y="83" text-anchor="end" class="lib">Cube 100 mm</text><rect x="150" y="70" width="250.7" height="18" rx="4" fill="#1f5fa8"><title>Cube 100 mm : Cx calculé 1,17, référence 1,05</title></rect><line x1="375.0" x2="375.0" y1="65" y2="93" stroke="#15233b" stroke-width="2.5"/><text x="408.7" y="84" class="val">1,17 / réf. 1,05 · +11 %</text><text x="140" y="121" text-anchor="end" class="lib">Cylindre Ø30</text><rect x="150" y="108" width="90.0" height="18" rx="4" fill="#1f5fa8"><title>Cylindre Ø30 : Cx calculé 0,42, référence 0,8</title></rect><line x1="321.4" x2="321.4" y1="103" y2="131" stroke="#15233b" stroke-width="2.5"/><text x="329.4" y="122" class="val">0,42 / réf. 0,8 · non convergé</text><text x="140" y="159" text-anchor="end" class="lib">Sphère Ø50</text><rect x="150" y="146" width="17.1" height="18" rx="4" fill="#1f5fa8"><title>Sphère Ø50 : Cx calculé 0,08, référence 0,47</title></rect><line x1="250.7" x2="250.7" y1="141" y2="169" stroke="#15233b" stroke-width="2.5"/><text x="258.7" y="160" class="val">0,08 / réf. 0,47 · limite connue</text></svg><p class="legende"><span class="cle barre"></span>Cx calculé <span class="cle trait"></span>référence de soufflerie (Hoerner)</p></figure></div>
+          <p class="note">Arêtes vives (cadre, plaques) : l'écart baisse avec le maillage. Formes rondes et lisses : sous-estimées, même avec couches (limite connue, détaillée dans la <a href="validation.html#formes">page Validation</a>).</p></div>
+        <div class="col"><figure class="graphe-fig"><figcaption class="gt">V2V Speeder 3″ à 35°, 120 km/h : S·Cx sans et avec couches limites (calculs convergés)</figcaption><svg class="graphe" viewBox="0 0 560 116" role="img" aria-label="V2V Speeder 3″ à 35°, 120 km/h : S·Cx 49,5 cm² sans couches limites, 62,6 cm² avec 5 couches (réglages par défaut)"><line x1="190.0" x2="190.0" y1="18" y2="94" stroke="#d6dfeb"/><text x="190.0" y="110" text-anchor="middle" class="ax">0</text><line x1="265.0" x2="265.0" y1="18" y2="94" stroke="#d6dfeb"/><text x="265.0" y="110" text-anchor="middle" class="ax">20</text><line x1="340.0" x2="340.0" y1="18" y2="94" stroke="#d6dfeb"/><text x="340.0" y="110" text-anchor="middle" class="ax">40</text><line x1="415.0" x2="415.0" y1="18" y2="94" stroke="#d6dfeb"/><text x="415.0" y="110" text-anchor="middle" class="ax">60</text><line x1="490.0" x2="490.0" y1="18" y2="94" stroke="#d6dfeb"/><text x="490.0" y="110" text-anchor="middle" class="ax">80</text><text x="180" y="41" text-anchor="end" class="lib">Sans couches limites</text><rect x="190" y="28" width="185.6" height="18" rx="4" fill="#9aa7b8"><title>Sans couches limites : 49,5 cm², 1 200 581 cellules</title></rect><text x="383.6" y="42" class="val">49,5 cm²</text><text x="180" y="75" text-anchor="end" class="lib">5 couches (par défaut)</text><rect x="190" y="62" width="234.8" height="18" rx="4" fill="#1f5fa8"><title>5 couches limites, réglages par défaut : 62,6 cm², 1 455 273 cellules</title></rect><text x="432.8" y="76" class="val">62,6 cm² · +26 %</text><text x="556" y="110" text-anchor="end" class="ax">cm²</text></svg></figure><figure class="graphe-fig conv"><img src="assets/app_maillage.jpg" alt="coupe des cellules colorée par niveau de raffinement" width="800" height="325" loading="lazy"><figcaption><b>Maillage automatique</b> · coupe des cellules colorée par niveau de raffinement</figcaption></figure></div>
       </div>
-      <div class="vues n3" id="vues-maillage"><figure><img src="assets/app_maillage.jpg" alt="coupe des cellules colorée par niveau de raffinement" width="800" height="325" loading="lazy"><figcaption><b>Maillage automatique</b> · coupe des cellules colorée par niveau de raffinement</figcaption></figure><figure><img src="assets/me_zones.jpg" alt="zone de raffinement ajoutée devant le drone" width="1000" height="600" loading="lazy"><figcaption><b>V2V 3″, boîte à air</b> · zone de raffinement ajoutée devant le drone</figcaption></figure><figure><img src="assets/geometrie_v2v.jpg" alt="boîte à air, zone proche et zone de sillage" width="1000" height="600" loading="lazy"><figcaption><b>V2V 3″, face au vent</b> · boîte à air, zone proche et zone de sillage</figcaption></figure></div>
+      <div class="vues" id="vues-maillage"><figure><img src="assets/me_zones.jpg" alt="zone de raffinement ajoutée devant le drone" width="1000" height="600" loading="lazy"><figcaption><b>V2V 3″, boîte à air</b> · zone de raffinement ajoutée devant le drone</figcaption></figure><figure><img src="assets/geometrie_v2v.jpg" alt="boîte à air, zone proche et zone de sillage" width="1000" height="600" loading="lazy"><figcaption><b>V2V 3″, face au vent</b> · boîte à air, zone proche et zone de sillage</figcaption></figure></div>
     </article>
     <article class="fiche reveal" id="f-eau">
-      <header class="fiche-tete"><span class="badge ok">Validé</span><h3>Écoulements dans l'eau</h3><p>Objet entièrement immergé et écoulements dans les tuyaux : mêmes équations que dans l'air, avec la masse volumique et la viscosité de l'eau (ou d'un autre liquide).</p></header>
+      <header class="fiche-tete"><a class="badge ok" href="validation.html" title="Voir la page Validation">Validé</a><h3>Écoulements dans l'eau</h3><p>Objet entièrement immergé et écoulements dans les tuyaux : mêmes équations que dans l'air, avec la masse volumique et la viscosité de l'eau (ou d'un autre liquide).</p></header>
       <div class="fiche-synth">
         <div class="col"><ul class="kpis"><li><b>−0,15&nbsp;%</b><span>écart de S·Cx entre eau et air à même Reynolds</span></li><li><b>−0,6&nbsp;%</b><span>tuyau droit laminaire contre la théorie (64/Re)</span></li><li><b>exacte</b><span>flottaison du cube : tirant, stabilité, assiette</span></li></ul><h4>Ce que vous obtenez</h4>
           <ul class="feat"><li>Pression et frottement sur les parois, perte de charge des tuyaux et coudes.</li><li>Indicateur de cavitation sur la carte de Cp (signalée, pas calculée).</li><li>Flottaison d'un objet : tirant d'eau, stabilité, assiette.</li></ul>
-          <p class="note">Pas de surface libre (vagues) dans ce mode. Cavitation sur bord fin ou arêtes vives : prudence, non validée.</p></div>
+          <p class="note">Vagues autour d'une coque fixe : calcul à part (surface libre), validé sur la carène Wigley (+0,9 % des essais ITTC) ; l'objet immergé et les tuyaux n'ont pas de surface libre. Cavitation sur bord fin ou arêtes vives : prudence, non validée.</p></div>
         <div class="col"><figure class="graphe-fig"><figcaption class="gt">Écart à la référence (théorie, corrélations ou écoulement potentiel)</figcaption><svg class="graphe" viewBox="0 0 560 258" role="img" aria-label="Écart à la référence (théorie, corrélations ou écoulement potentiel)"><rect x="210.0" y="18" width="111.3" height="216" fill="rgba(29,122,74,.10)"/><line x1="210.0" x2="210.0" y1="18" y2="234" stroke="#d6dfeb"/><text x="210.0" y="250" text-anchor="middle" class="ax">−10 %</text><line x1="265.7" x2="265.7" y1="18" y2="234" stroke="#15233b"/><text x="265.7" y="250" text-anchor="middle" class="ax">0 %</text><line x1="321.3" x2="321.3" y1="18" y2="234" stroke="#d6dfeb"/><text x="321.3" y="250" text-anchor="middle" class="ax">+10 %</text><line x1="377.0" x2="377.0" y1="18" y2="234" stroke="#d6dfeb"/><text x="377.0" y="250" text-anchor="middle" class="ax">+20 %</text><line x1="432.7" x2="432.7" y1="18" y2="234" stroke="#d6dfeb"/><text x="432.7" y="250" text-anchor="middle" class="ax">+30 %</text><line x1="488.3" x2="488.3" y1="18" y2="234" stroke="#d6dfeb"/><text x="488.3" y="250" text-anchor="middle" class="ax">+40 %</text><line x1="544.0" x2="544.0" y1="18" y2="234" stroke="#d6dfeb"/><text x="544.0" y="250" text-anchor="middle" class="ax">+50 %</text><text x="200" y="41" text-anchor="end" class="lib">Tuyau droit, laminaire</text><rect x="259.3" y="29" width="6.0" height="16" rx="4" fill="#1f5fa8"><title>Tuyau droit, laminaire : −0,6 % (validé)</title></rect><text x="273.3" y="42" class="val">−0,6 % · validé</text><text x="200" y="75" text-anchor="end" class="lib">Tuyau droit, turbulent</text><rect x="276.8" y="63" width="22.3" height="16" rx="4" fill="#1f5fa8"><title>Tuyau droit, turbulent : +2 à +6 % (validé)</title></rect><text x="307.1" y="76" class="val">+2 à +6 % · validé</text><text x="200" y="109" text-anchor="end" class="lib">Drone : eau contre air</text><rect x="261.8" y="97" width="6.0" height="16" rx="4" fill="#1f5fa8"><title>Drone : eau contre air : −0,15 % (validé)</title></rect><text x="275.8" y="110" class="val">−0,15 % · validé</text><text x="200" y="143" text-anchor="end" class="lib">Circuit tuyau + coude</text><rect x="287.9" y="131" width="22.3" height="16" rx="4" fill="#1f5fa8"><title>Circuit tuyau + coude : +4 à +8 % (validé)</title></rect><text x="318.2" y="144" class="val">+4 à +8 % · validé</text><text x="200" y="177" text-anchor="end" class="lib">Cavitation, ellipsoïde</text><rect x="291.1" y="165" width="6.0" height="16" rx="4" fill="#1f5fa8"><title>Cavitation, ellipsoïde : +4,7 à +5,5 % (validé)</title></rect><text x="305.1" y="178" class="val">+4,7 à +5,5 % · validé</text><text x="200" y="211" text-anchor="end" class="lib">Coude 90° seul</text><rect x="338.0" y="199" width="66.8" height="16" rx="4" fill="#9aa7b8"><title>Coude 90° seul : +13 à +25 % (cohérent)</title></rect><text x="412.8" y="212" class="val">+13 à +25 % · cohérent</text></svg><p class="legende"><span class="cle bande"></span>critère fixé à l'avance (± 10 %) <span class="cle barre"></span>validé <span class="cle gris"></span>cohérent, hors critère</p></figure></div>
       </div>
       
-    <article class="etude5" id="r-coude"><figure class="grande"><img src="assets/rendu_coude_lignes.jpg" srcset="assets/m/rendu_coude_lignes.jpg 800w, assets/rendu_coude_lignes.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Lignes de courant colorées par la vitesse de l&#x27;eau (1,5 à 3,2 m/s), parois en verre." width="2000" height="1125" loading="lazy"><figcaption>Lignes de courant colorées par la vitesse de l&#x27;eau (1,5 à 3,2 m/s), parois en verre.</figcaption></figure><div class="texte"><span class="badge ok">Validé</span><h3>Coude 90° dans l'eau</h3><p class="quoi">Ø 20 mm, R/D = 2, 47,2 L/min (2,5 m/s, Re 5·10⁴)</p><ul class="kpis"><li><b>K = 2,26</b><span>coefficient de perte du circuit, 556 509 cellules, calcul convergé</span></li><li><b>+4 à +8 %</b><span>perte de charge du circuit contre les corrélations (validation)</span></li></ul><p class=note>Coude seul : +13 à +25 % des corrélations, publié comme « cohérent ».</p><figure><img src="assets/rendu_coude_mediane.jpg" srcset="assets/m/rendu_coude_mediane.jpg 800w, assets/rendu_coude_mediane.jpg 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupe longitudinale : l&#x27;eau rapide passe à l&#x27;extérieur du virage, zone lente le long de la paroi intérieure." width="1400" height="1219" loading="lazy"><figcaption>Coupe longitudinale : l&#x27;eau rapide passe à l&#x27;extérieur du virage, zone lente le long de la paroi intérieure.</figcaption></figure></div><figure class="large"><img src="assets/rendu_coude_sections.jpg" srcset="assets/m/rendu_coude_sections.jpg 800w, assets/rendu_coude_sections.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupes transversales : deux tourbillons contraires (Dean) naissent après le coude et s&#x27;effacent vers 12 D." width="2000" height="512" loading="lazy"><figcaption>Coupes transversales : deux tourbillons contraires (Dean) naissent après le coude et s&#x27;effacent vers 12 D.</figcaption></figure></article><article class="etude5" id="r-tuyau"><figure class="graphe-fig"><figcaption class="gt">Pression le long de l&#x27;axe du tuyau (calcul)</figcaption><svg class="graphe" viewBox="0 0 620 340" role="img" aria-label="Pression le long de l&#x27;axe du tuyau (calcul)"><line x1="62" x2="604" y1="296.0" y2="296.0" stroke="#d6dfeb"/><text x="54" y="300.0" text-anchor="end" class="ax">0</text><line x1="62" x2="604" y1="229.5" y2="229.5" stroke="#d6dfeb"/><text x="54" y="233.5" text-anchor="end" class="ax">1 000</text><line x1="62" x2="604" y1="163.0" y2="163.0" stroke="#d6dfeb"/><text x="54" y="167.0" text-anchor="end" class="ax">2 000</text><line x1="62" x2="604" y1="96.5" y2="96.5" stroke="#d6dfeb"/><text x="54" y="100.5" text-anchor="end" class="ax">3 000</text><line x1="62" x2="604" y1="30.0" y2="30.0" stroke="#d6dfeb"/><text x="54" y="34.0" text-anchor="end" class="ax">4 000</text><text x="62.0" y="314" text-anchor="middle" class="ax">0</text><text x="170.4" y="314" text-anchor="middle" class="ax">200</text><text x="278.8" y="314" text-anchor="middle" class="ax">400</text><text x="387.2" y="314" text-anchor="middle" class="ax">600</text><text x="495.6" y="314" text-anchor="middle" class="ax">800</text><text x="604.0" y="314" text-anchor="middle" class="ax">1 000</text><polyline points="68.8,55.7 82.3,68.2 95.9,75.9 109.4,83.0 123.0,89.9 136.5,96.6 150.1,103.2 163.6,109.6 177.2,115.8 190.7,121.8 204.3,127.8 217.8,133.6 231.4,139.4 244.9,145.2 258.5,150.9 272.0,156.5 285.6,162.1 299.1,167.7 312.7,173.3 326.2,178.9 339.8,184.4 353.3,190.0 366.9,195.5 380.4,201.1 394.0,206.7 407.5,212.4 421.1,218.0 434.6,224.0 448.2,230.0 461.7,235.7 475.3,241.4 488.8,247.2 502.4,253.0 515.9,258.8 529.5,264.5 543.0,270.3 556.6,276.1 570.1,282.0 583.7,287.8 597.2,294.9" fill="none" stroke="#1f5fa8" stroke-width="2.5" stroke-linejoin="round"/><circle cx="68.8" cy="55.7" r="3" fill="#1f5fa8"><title>12 mm : 3 613 Pa</title></circle><circle cx="123.0" cy="89.9" r="3" fill="#1f5fa8"><title>112 mm : 3 099 Pa</title></circle><circle cx="177.2" cy="115.8" r="3" fill="#1f5fa8"><title>212 mm : 2 710 Pa</title></circle><circle cx="231.4" cy="139.4" r="3" fill="#1f5fa8"><title>312 mm : 2 354 Pa</title></circle><circle cx="285.6" cy="162.1" r="3" fill="#1f5fa8"><title>412 mm : 2 013 Pa</title></circle><circle cx="339.8" cy="184.4" r="3" fill="#1f5fa8"><title>512 mm : 1 678 Pa</title></circle><circle cx="394.0" cy="206.7" r="3" fill="#1f5fa8"><title>612 mm : 1 342 Pa</title></circle><circle cx="448.2" cy="230.0" r="3" fill="#1f5fa8"><title>712 mm : 993 Pa</title></circle><circle cx="502.4" cy="253.0" r="3" fill="#1f5fa8"><title>812 mm : 647 Pa</title></circle><circle cx="556.6" cy="276.1" r="3" fill="#1f5fa8"><title>912 mm : 298 Pa</title></circle><text x="333" y="334" text-anchor="middle" class="ax">distance depuis l&#x27;entrée (mm)</text><text x="54" y="16" text-anchor="end" class="ax">Pa</text></svg></figure><div class="texte"><span class="badge ok">Validé</span><h3>Tuyau droit dans l'eau</h3><p class="quoi">Ø 20 × 1 000 mm, 47,2 L/min (2,5 m/s, Re 5·10⁴)</p><ul class="kpis"><li><b>3 153 Pa</b><span>perte de charge sur 1 m, K = 1,00, 304 335 cellules, calcul convergé</span></li><li><b>+2 à +6 %</b><span>frottement contre la loi de Blasius (validation) ; −0,6 % en laminaire contre 64/Re</span></li></ul></div><figure class="large"><img src="assets/rendu_tuyau_sections.jpg" srcset="assets/m/rendu_tuyau_sections.jpg 800w, assets/rendu_tuyau_sections.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupes à 0, 2, 5, 10, 20 et 45 diamètres de l&#x27;entrée : le profil de vitesse passe de plat à développé (vitesse au centre ≈ 1,2 fois la moyenne)." width="2000" height="512" loading="lazy"><figcaption>Coupes à 0, 2, 5, 10, 20 et 45 diamètres de l&#x27;entrée : le profil de vitesse passe de plat à développé (vitesse au centre ≈ 1,2 fois la moyenne).</figcaption></figure></article><article class="etude5" id="r-ellipsoide"><figure class="grande"><img src="assets/rendu_ellipsoide.jpg" srcset="assets/m/rendu_ellipsoide.jpg 800w, assets/rendu_ellipsoide.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Lignes de courant colorées par la vitesse de l&#x27;eau ; ellipsoïde coloré par la pression (Cp) : surpression au nez (rouge), dépression sur les flancs (bleu), là où la cavitation commencerait." width="2000" height="1125" loading="lazy"><figcaption>Lignes de courant colorées par la vitesse de l&#x27;eau ; ellipsoïde coloré par la pression (Cp) : surpression au nez (rouge), dépression sur les flancs (bleu), là où la cavitation commencerait.</figcaption></figure><div class="texte"><span class="badge ok">Validé</span><h3>Ellipsoïde 3:1 dans l'eau</h3><p class="quoi">300 × 100 mm, 36 km/h (10 m/s), Re 3·10⁶ ; contrôle de cavitation</p><ul class="kpis"><li><b>Cp min −0,272</b><span>pour −0,259 en théorie (écoulement potentiel) : +4,9 %, 932 222 cellules, calcul convergé</span></li><li><b>+4,7 à +5,5 %</b><span>début de cavitation, deux maillages (validation)</span></li></ul></div></article><article class="etude5" id="r-flottaison"><figure class="grande"><img src="assets/rendu_flottaison_cubes.jpg" srcset="assets/m/rendu_flottaison_cubes.jpg 800w, assets/rendu_flottaison_cubes.jpg 1800w" sizes="(max-width: 720px) 100vw, 900px" alt="Cube de 100 mm, de gauche à droite : 0,15 kg flotte droit et stable (tirant d&#x27;eau 15,0 mm) ; 0,4 kg se met sur l&#x27;arête à 45° (instable à plat) ; 1,2 kg coule (poussée maximale 9,8 N)." width="1800" height="853" loading="lazy"><figcaption>Cube de 100 mm, de gauche à droite : 0,15 kg flotte droit et stable (tirant d&#x27;eau 15,0 mm) ; 0,4 kg se met sur l&#x27;arête à 45° (instable à plat) ; 1,2 kg coule (poussée maximale 9,8 N).</figcaption></figure><div class="texte"><span class="badge ok">Validé</span><h3>Flottaison : cube et carène</h3><p class="quoi">Calcul géométrique exact (poussée d'Archimède, centre de carène, stabilité), eau douce</p><ul class="kpis"><li><b>15,0 mm</b><span>tirant d&#x27;eau du cube de 0,15 kg, GM 13,0 mm : stable</span></li><li><b>GM −15,7 mm</b><span>carène Wigley, centre de gravité au centre du volume : instable en roulis (normal sans lest)</span></li></ul><p class=note>Tirant d&#x27;eau, assiette, stabilité et « coule » vérifiés exacts sur le cube (validation).</p><figure><img src="assets/rendu_flottaison_wigley.jpg" srcset="assets/m/rendu_flottaison_wigley.jpg 800w, assets/rendu_flottaison_wigley.jpg 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Carène Wigley de 2,5 m, 43,3 kg : tirant d&#x27;eau 156,2 mm, partie immergée en bleu." width="1400" height="575" loading="lazy"><figcaption>Carène Wigley de 2,5 m, 43,3 kg : tirant d&#x27;eau 156,2 mm, partie immergée en bleu.</figcaption></figure></div></article></article>
+    <article class="etude5 haut5" id="r-coude"><div class="texte haut5-t"><div><span class="badge ok">Validé</span><h3>Coude 90° dans l'eau</h3><p class="quoi">Ø 20 mm, R/D = 2, 47,2 L/min (2,5 m/s, Re 5·10⁴)</p><p class=note>Coude seul : +13 à +25 % des corrélations, publié comme « cohérent ».</p></div><ul class="kpis"><li><b>K = 2,26</b><span>coefficient de perte du circuit, 556 509 cellules, calcul convergé</span></li><li><b>+4 à +8 %</b><span>perte de charge du circuit contre les corrélations (validation)</span></li></ul></div><div class="paire5 large"><figure style="flex-grow:1.778"><img src="assets/rendu_coude_lignes.jpg" srcset="assets/m/rendu_coude_lignes.jpg 800w, assets/rendu_coude_lignes.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Lignes de courant colorées par la vitesse de l&#x27;eau (1,5 à 3,2 m/s), parois en verre." width="2000" height="1125" loading="lazy"><figcaption><b>Coude 90°, Ø 20 mm, 2,5 m/s</b> · lignes de courant colorées par la vitesse de l&#x27;eau (1,5 à 3,2 m/s), parois en verre</figcaption></figure><figure style="flex-grow:1.148"><img src="assets/rendu_coude_mediane.jpg" srcset="assets/m/rendu_coude_mediane.jpg 800w, assets/rendu_coude_mediane.jpg 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupe longitudinale : l&#x27;eau rapide passe à l&#x27;extérieur du virage, zone lente le long de la paroi intérieure." width="1400" height="1219" loading="lazy"><figcaption><b>Coude 90°, coupe longitudinale</b> · vitesse de l&#x27;eau : rapide à l&#x27;extérieur du virage, lente le long de la paroi intérieure</figcaption></figure></div><figure class="large"><img src="assets/rendu_coude_sections.jpg" srcset="assets/m/rendu_coude_sections.jpg 800w, assets/rendu_coude_sections.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupes transversales : deux tourbillons contraires (Dean) naissent après le coude et s&#x27;effacent vers 12 D." width="2000" height="512" loading="lazy"><figcaption><b>Coude 90°, coupes transversales</b> · vitesse de l&#x27;eau : deux tourbillons contraires (Dean) naissent après le coude et s&#x27;effacent vers 12 D</figcaption></figure></article><article class="etude5" id="r-tuyau"><figure class="graphe-fig"><figcaption class="gt">Tuyau droit Ø 20 × 1 000 mm, 2,5 m/s : pression le long de l&#x27;axe (calcul)</figcaption><svg class="graphe" viewBox="0 0 620 340" role="img" aria-label="Pression le long de l&#x27;axe du tuyau (calcul)"><line x1="62" x2="604" y1="296.0" y2="296.0" stroke="#d6dfeb"/><text x="54" y="300.0" text-anchor="end" class="ax">0</text><line x1="62" x2="604" y1="229.5" y2="229.5" stroke="#d6dfeb"/><text x="54" y="233.5" text-anchor="end" class="ax">1 000</text><line x1="62" x2="604" y1="163.0" y2="163.0" stroke="#d6dfeb"/><text x="54" y="167.0" text-anchor="end" class="ax">2 000</text><line x1="62" x2="604" y1="96.5" y2="96.5" stroke="#d6dfeb"/><text x="54" y="100.5" text-anchor="end" class="ax">3 000</text><line x1="62" x2="604" y1="30.0" y2="30.0" stroke="#d6dfeb"/><text x="54" y="34.0" text-anchor="end" class="ax">4 000</text><text x="62.0" y="314" text-anchor="middle" class="ax">0</text><text x="170.4" y="314" text-anchor="middle" class="ax">200</text><text x="278.8" y="314" text-anchor="middle" class="ax">400</text><text x="387.2" y="314" text-anchor="middle" class="ax">600</text><text x="495.6" y="314" text-anchor="middle" class="ax">800</text><text x="604.0" y="314" text-anchor="middle" class="ax">1 000</text><polyline points="68.8,55.7 82.3,68.2 95.9,75.9 109.4,83.0 123.0,89.9 136.5,96.6 150.1,103.2 163.6,109.6 177.2,115.8 190.7,121.8 204.3,127.8 217.8,133.6 231.4,139.4 244.9,145.2 258.5,150.9 272.0,156.5 285.6,162.1 299.1,167.7 312.7,173.3 326.2,178.9 339.8,184.4 353.3,190.0 366.9,195.5 380.4,201.1 394.0,206.7 407.5,212.4 421.1,218.0 434.6,224.0 448.2,230.0 461.7,235.7 475.3,241.4 488.8,247.2 502.4,253.0 515.9,258.8 529.5,264.5 543.0,270.3 556.6,276.1 570.1,282.0 583.7,287.8 597.2,294.9" fill="none" stroke="#1f5fa8" stroke-width="2.5" stroke-linejoin="round"/><circle cx="68.8" cy="55.7" r="3" fill="#1f5fa8"><title>12 mm : 3 613 Pa</title></circle><circle cx="123.0" cy="89.9" r="3" fill="#1f5fa8"><title>112 mm : 3 099 Pa</title></circle><circle cx="177.2" cy="115.8" r="3" fill="#1f5fa8"><title>212 mm : 2 710 Pa</title></circle><circle cx="231.4" cy="139.4" r="3" fill="#1f5fa8"><title>312 mm : 2 354 Pa</title></circle><circle cx="285.6" cy="162.1" r="3" fill="#1f5fa8"><title>412 mm : 2 013 Pa</title></circle><circle cx="339.8" cy="184.4" r="3" fill="#1f5fa8"><title>512 mm : 1 678 Pa</title></circle><circle cx="394.0" cy="206.7" r="3" fill="#1f5fa8"><title>612 mm : 1 342 Pa</title></circle><circle cx="448.2" cy="230.0" r="3" fill="#1f5fa8"><title>712 mm : 993 Pa</title></circle><circle cx="502.4" cy="253.0" r="3" fill="#1f5fa8"><title>812 mm : 647 Pa</title></circle><circle cx="556.6" cy="276.1" r="3" fill="#1f5fa8"><title>912 mm : 298 Pa</title></circle><text x="333" y="334" text-anchor="middle" class="ax">distance depuis l&#x27;entrée (mm)</text><text x="54" y="16" text-anchor="end" class="ax">Pa</text></svg></figure><div class="texte"><span class="badge ok">Validé</span><h3>Tuyau droit dans l'eau</h3><p class="quoi">Ø 20 × 1 000 mm, 47,2 L/min (2,5 m/s, Re 5·10⁴)</p><ul class="kpis"><li><b>3 153 Pa</b><span>perte de charge sur 1 m, K = 1,00, 304 335 cellules, calcul convergé</span></li><li><b>+2 à +6 %</b><span>frottement contre la loi de Blasius (validation) ; −0,6 % en laminaire contre 64/Re</span></li></ul></div><figure class="large"><img src="assets/rendu_tuyau_sections.jpg" srcset="assets/m/rendu_tuyau_sections.jpg 800w, assets/rendu_tuyau_sections.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Coupes à 0, 2, 5, 10, 20 et 45 diamètres de l&#x27;entrée : le profil de vitesse passe de plat à développé (vitesse au centre ≈ 1,2 fois la moyenne)." width="2000" height="512" loading="lazy"><figcaption><b>Tuyau droit Ø 20 mm, 2,5 m/s, coupes à 0, 2, 5, 10, 20 et 45 D</b> · vitesse de l&#x27;eau : profil plat à l&#x27;entrée, développé ensuite (vitesse au centre ≈ 1,2 fois la moyenne)</figcaption></figure></article><article class="etude5" id="r-ellipsoide"><figure class="grande"><img src="assets/rendu_ellipsoide.jpg" srcset="assets/m/rendu_ellipsoide.jpg 800w, assets/rendu_ellipsoide.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Lignes de courant colorées par la vitesse de l&#x27;eau ; ellipsoïde coloré par la pression (Cp) : surpression au nez (rouge), dépression sur les flancs (bleu), là où la cavitation commencerait." width="2000" height="1125" loading="lazy"><figcaption><b>Ellipsoïde 3:1, 10 m/s</b> · lignes colorées par la vitesse de l&#x27;eau, surface colorée par la pression (Cp) : surpression au nez (rouge), dépression sur les flancs (bleu), là où la cavitation commencerait</figcaption></figure><div class="texte"><span class="badge ok">Validé</span><h3>Ellipsoïde 3:1 dans l'eau</h3><p class="quoi">300 × 100 mm, 36 km/h (10 m/s), Re 3·10⁶ ; contrôle de cavitation</p><ul class="kpis"><li><b>−0,272</b><span>Cp minimal, pour −0,259 en théorie (écoulement potentiel) : +4,9 %, 932 222 cellules, calcul convergé</span></li><li><b>+4,7 à +5,5 %</b><span>début de cavitation, deux maillages (validation)</span></li></ul></div></article><article class="etude5" id="r-flottaison"><figure class="grande"><img src="assets/rendu_flottaison_cubes.jpg" srcset="assets/m/rendu_flottaison_cubes.jpg 800w, assets/rendu_flottaison_cubes.jpg 1800w" sizes="(max-width: 720px) 100vw, 900px" alt="Cube de 100 mm, de gauche à droite : 0,15 kg flotte droit et stable (tirant d&#x27;eau 15,0 mm) ; 0,4 kg se met sur l&#x27;arête à 45° (instable à plat) ; 1,2 kg coule (poussée maximale 9,8 N)." width="1800" height="853" loading="lazy"><figcaption><b>Cube de 100 mm, 0,15 puis 0,4 puis 1,2 kg, eau douce</b> · flotte droit et stable (tirant d&#x27;eau 15,0 mm) ; se met sur l&#x27;arête à 45° (instable à plat) ; coule (poussée maximale 9,8 N)</figcaption></figure><div class="texte"><span class="badge ok">Validé</span><h3>Flottaison : cube et carène</h3><p class="quoi">Calcul géométrique exact (poussée d'Archimède, centre de carène, stabilité), eau douce</p><ul class="kpis"><li><b>15,0 mm</b><span>tirant d&#x27;eau du cube de 0,15 kg, GM 13,0 mm : stable</span></li><li><b>GM −15,7 mm</b><span>carène Wigley, centre de gravité au centre du volume : instable en roulis (normal sans lest)</span></li></ul><p class=note>Tirant d&#x27;eau, assiette, stabilité et « coule » vérifiés exacts sur le cube (validation).</p></div><figure class="large"><img src="assets/rendu_flottaison_wigley.jpg" srcset="assets/m/rendu_flottaison_wigley.jpg 800w, assets/rendu_flottaison_wigley.jpg 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Carène Wigley de 2,5 m, 43,3 kg : tirant d&#x27;eau 156,2 mm, partie immergée en bleu." width="1400" height="575" loading="lazy"><figcaption><b>Carène Wigley de 2,5 m, 43,3 kg</b> · partie immergée en bleu, tirant d&#x27;eau 156,2 mm</figcaption></figure></article></article>
     <article class="fiche reveal" id="f-thermique">
-      <header class="fiche-tete"><span class="badge essai">En essai</span><h3>Thermique : refroidissement par l'air et par liquide</h3><p>Chaleur évacuée par les pièces chaudes (moteurs, électronique) dans le courant d'air : convection forcée, température de l'air autour et dans le sillage.</p></header>
+      <header class="fiche-tete"><a class="badge essai" href="validation.html" title="Voir la page Validation">En essai</a><h3>Thermique : refroidissement par l'air et par liquide</h3><p>Chaleur évacuée par les pièces chaudes (moteurs, électronique) dans le courant d'air : convection forcée, température de l'air autour et dans le sillage.</p></header>
       <div class="fiche-synth">
         <div class="col"><ul class="kpis"><li><b>± 25&nbsp;%</b><span>sur la valeur absolue de la chaleur</span></li><li><b>fiable</b><span>pour comparer deux variantes (avec ou sans tuyère, une version contre une autre)</span></li><li><b>≤ 1&nbsp;%</b><span>d&#x27;écart entre versions d&#x27;OpenFOAM® sur le même cas</span></li></ul><h4>Ce que vous obtenez</h4>
           <ul class="feat"><li>Chaleur évacuée par pièce, coefficient d'échange sur les parois.</li><li>Température de l'air en coupe, sillage chaud.</li><li>Comparaison de variantes de carénage ou de refroidissement.</li></ul>
-          <p class="note">Fonction thermique en essai : comparaisons fiables entre variantes (avec ou sans tuyère, une version contre une autre) ; valeur absolue de la chaleur à ± 25 % près.</p></div>
-        <div class="col"><figure class="graphe-fig"><figcaption class="gt">Cylindre chauffé (air 20 °C, paroi 60 °C) : écart du Nusselt à la corrélation</figcaption><svg class="graphe" viewBox="0 0 560 190" role="img" aria-label="Cylindre chauffé (air 20 °C, paroi 60 °C) : écart du Nusselt à la corrélation"><rect x="176.6" y="18" width="200.4" height="148" fill="rgba(29,122,74,.10)"/><line x1="210.0" x2="210.0" y1="18" y2="166" stroke="#d6dfeb"/><text x="210.0" y="182" text-anchor="middle" class="ax">−10 %</text><line x1="276.8" x2="276.8" y1="18" y2="166" stroke="#15233b"/><text x="276.8" y="182" text-anchor="middle" class="ax">0 %</text><line x1="343.6" x2="343.6" y1="18" y2="166" stroke="#d6dfeb"/><text x="343.6" y="182" text-anchor="middle" class="ax">+10 %</text><line x1="410.4" x2="410.4" y1="18" y2="166" stroke="#d6dfeb"/><text x="410.4" y="182" text-anchor="middle" class="ax">+20 %</text><line x1="477.2" x2="477.2" y1="18" y2="166" stroke="#d6dfeb"/><text x="477.2" y="182" text-anchor="middle" class="ax">+30 %</text><line x1="544.0" x2="544.0" y1="18" y2="166" stroke="#d6dfeb"/><text x="544.0" y="182" text-anchor="middle" class="ax">+40 %</text><text x="200" y="41" text-anchor="end" class="lib">180 km/h (Re 10⁵)</text><rect x="273.8" y="29" width="6.0" height="16" rx="4" fill="#1f5fa8"><title>180 km/h (Re 10⁵) : 0 % (dans le critère)</title></rect><text x="287.8" y="42" class="val">0 % · dans le critère</text><text x="200" y="75" text-anchor="end" class="lib">72 km/h (Re 4·10⁴)</text><rect x="321.2" y="63" width="6.0" height="16" rx="4" fill="#1f5fa8"><title>72 km/h (Re 4·10⁴) : +7,1 % (dans le critère)</title></rect><text x="335.2" y="76" class="val">+7,1 % · dans le critère</text><text x="200" y="109" text-anchor="end" class="lib">18 km/h (Re 10⁴)</text><rect x="412.1" y="97" width="6.0" height="16" rx="4" fill="#9aa7b8"><title>18 km/h (Re 10⁴) : +20,7 % (hors critère)</title></rect><text x="426.1" y="110" class="val">+20,7 % · hors critère</text><text x="200" y="143" text-anchor="end" class="lib">Convection naturelle</text><rect x="266.5" y="131" width="6.0" height="16" rx="4" fill="#9aa7b8"><title>Convection naturelle : −1,1 % (non stable)</title></rect><text x="280.5" y="144" class="val">−1,1 % · non stable</text></svg><p class="legende"><span class="cle bande"></span>critère fixé à l'avance (± 15 %) <span class="cle barre"></span>dans le critère <span class="cle gris"></span>hors critère ou non stable</p></figure><figure class="graphe-fig"><figcaption class="gt">SPEEDER 4 à 400 km/h : chaleur évacuée selon le maillage</figcaption><svg class="graphe" viewBox="0 0 560 150" role="img" aria-label="SPEEDER 4 à 400 km/h : chaleur évacuée selon le maillage"><line x1="190.0" x2="190.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="190.0" y="144" text-anchor="middle" class="ax">0</text><line x1="265.0" x2="265.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="265.0" y="144" text-anchor="middle" class="ax">125</text><line x1="340.0" x2="340.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="340.0" y="144" text-anchor="middle" class="ax">250</text><line x1="415.0" x2="415.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="415.0" y="144" text-anchor="middle" class="ax">375</text><line x1="490.0" x2="490.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="490.0" y="144" text-anchor="middle" class="ax">500</text><text x="180" y="41" text-anchor="end" class="lib">Allégé, 0,43 M cellules</text><rect x="190" y="28" width="134.9" height="18" rx="4" fill="#1f5fa8"><title>Allégé, 0,43 M cellules : 224,9 W</title></rect><text x="332.9" y="42" class="val">224,9 W</text><text x="180" y="75" text-anchor="end" class="lib">Standard, 1,33 M cellules</text><rect x="190" y="62" width="182.1" height="18" rx="4" fill="#1f5fa8"><title>Standard, 1,33 M cellules : 303,5 W</title></rect><text x="380.1" y="76" class="val">303,5 W</text><text x="180" y="109" text-anchor="end" class="lib">Fin, 3,06 M cellules</text><rect x="190" y="96" width="223.1" height="18" rx="4" fill="#1f5fa8"><title>Fin, 3,06 M cellules : 371,8 W — +22,5 %</title></rect><text x="421.1" y="110" class="val">371,8 W · +22,5 %</text><text x="556" y="144" text-anchor="end" class="ax">W</text></svg></figure><p class="note">Corrélations de Churchill-Bernstein (convection forcée) et Churchill-Chu (convection naturelle), critère ± 15 %. Sur le drone, la traînée ne bouge presque plus avec le maillage (−2,2 %), la chaleur si : d'où le statut « en essai ».</p></div>
+          <p class="note">Cylindre chauffé : Nusselt à 0 à +21 % de la corrélation de Churchill-Bernstein selon la vitesse, pour un critère de ± 15 % (<a href="validation.html#thermique">détail</a>).</p></div>
+        <div class="col"><figure class="graphe-fig"><figcaption class="gt">SPEEDER 4 à 400 km/h : chaleur évacuée selon le maillage</figcaption><svg class="graphe" viewBox="0 0 560 150" role="img" aria-label="SPEEDER 4 à 400 km/h : chaleur évacuée selon le maillage"><line x1="190.0" x2="190.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="190.0" y="144" text-anchor="middle" class="ax">0</text><line x1="265.0" x2="265.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="265.0" y="144" text-anchor="middle" class="ax">125</text><line x1="340.0" x2="340.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="340.0" y="144" text-anchor="middle" class="ax">250</text><line x1="415.0" x2="415.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="415.0" y="144" text-anchor="middle" class="ax">375</text><line x1="490.0" x2="490.0" y1="18" y2="128" stroke="#d6dfeb" stroke-width="1"/><text x="490.0" y="144" text-anchor="middle" class="ax">500</text><text x="180" y="41" text-anchor="end" class="lib">Allégé, 0,43 M cellules</text><rect x="190" y="28" width="134.9" height="18" rx="4" fill="#1f5fa8"><title>Allégé, 0,43 M cellules : 224,9 W</title></rect><text x="332.9" y="42" class="val">224,9 W</text><text x="180" y="75" text-anchor="end" class="lib">Standard, 1,33 M cellules</text><rect x="190" y="62" width="182.1" height="18" rx="4" fill="#1f5fa8"><title>Standard, 1,33 M cellules : 303,5 W</title></rect><text x="380.1" y="76" class="val">303,5 W</text><text x="180" y="109" text-anchor="end" class="lib">Fin, 3,06 M cellules</text><rect x="190" y="96" width="223.1" height="18" rx="4" fill="#1f5fa8"><title>Fin, 3,06 M cellules : 371,8 W — +22,5 %</title></rect><text x="421.1" y="110" class="val">371,8 W · +22,5 %</text><text x="556" y="144" text-anchor="end" class="ax">W</text></svg></figure><p class="note">Sur le drone, la traînée ne bouge presque plus avec le maillage (−2,2 %), la chaleur si : d'où le statut « en essai ».</p></div>
       </div>
       <div class="vues" id="vues-thermique"><figure><img src="assets/etudes/speeder4_thermique.webp" srcset="assets/m/etudes/speeder4_thermique.webp 800w, assets/etudes/speeder4_thermique.webp 1600w" sizes="(max-width: 720px) 100vw, 900px" alt="coefficient d&#x27;échange de chaleur sur les tuyères, du bleu (faible) au rouge (fort)" width="1600" height="869" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h</b> · coefficient d&#x27;échange de chaleur sur les tuyères, du bleu (faible) au rouge (fort)</figcaption></figure><figure><img src="assets/etudes/speeder4_coupe_2.webp" srcset="assets/m/etudes/speeder4_coupe_2.webp 800w, assets/etudes/speeder4_coupe_2.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="température de l&#x27;air : air chaud dans les tuyères, panache à leur sortie" width="1400" height="686" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h, coupe par deux moteurs</b> · température de l&#x27;air : air chaud dans les tuyères, panache à leur sortie</figcaption></figure><figure><img src="assets/etudes/speeder4_coupe_3.webp" srcset="assets/m/etudes/speeder4_coupe_3.webp 800w, assets/etudes/speeder4_coupe_3.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="température de l&#x27;air autour des moteurs" width="1400" height="686" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h, vue de dessus</b> · température de l&#x27;air autour des moteurs</figcaption></figure><figure><img src="assets/etudes/speeder4_coupe_5.webp" srcset="assets/m/etudes/speeder4_coupe_5.webp 800w, assets/etudes/speeder4_coupe_5.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="température de l&#x27;air : réchauffement au nez, sillage chaud" width="1400" height="686" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h, coupe au centre</b> · température de l&#x27;air : réchauffement au nez, sillage chaud</figcaption></figure></div>
-    <article class="etude5" id="r-circuit"><figure class="grande"><video controls muted playsinline loop preload="none" poster="assets/video_circuit_speeder8s.jpg" width="1920" height="1080"><source src="assets/video_circuit_speeder8s.mp4" type="video/mp4"></video><figcaption>L&#x27;eau fait le tour de la boucle, pompe comprise (particules au rythme du calcul, ralenti ×10), gros plan sur la pompe où l&#x27;eau tourne autour de la roue (eau et roue ralenties ×130), puis retour sur le circuit. Seul le circuit est montré.</figcaption></figure><div class="texte"><span class="badge essai">En essai</span><h3>Refroidissement liquide : circuit du Speeder 8 à 12S</h3><p class="quoi">Boucle fermée, eau à 0,54 L/min mise en mouvement par la pompe (roue en rotation) : rampe de 9 jets, lames d'eau de 1 mm contre les tôles des ESC, collecteur, retour</p><ul class="kpis"><li><b>0,54 L/min</b><span>débit calculé de la boucle fermée ; un tour en ≈ 2,6 s</span></li><li><b>87 → 65 °C</b><span>MOSFET au plus chaud, plein gaz 25 s, en 8S puis en 12S (estimé, ESC à 97 %) ; limite 115 °C</span></li></ul><p class=note>Écoulement calculé avec OpenFOAM® v2412 (boucle fermée, roue en rotation à 15 750 tr/min). Dans la tête de pompe, lignes tracées dans le champ de vitesse calculé (moyenné).</p><figure><img src="assets/rendu_circuit_pompe.jpg" alt="Pompe vue de l&#x27;avant (15 750 tr/min) : l&#x27;eau tourne à 3 à 4 m/s dans la chambre puis part au refoulement." width="1200" height="903" loading="lazy"><figcaption>Pompe vue de l&#x27;avant (15 750 tr/min) : l&#x27;eau tourne à 3 à 4 m/s dans la chambre puis part au refoulement.</figcaption></figure></div><div class="large t812-bloc"><div class="table-ref t812"><table><thead><tr><th>Plein gaz 25 s, départ à 30 °C</th><th>8S</th><th>12S</th></tr></thead><tbody>
+    <article class="etude5" id="r-circuit"><figure class="grande"><video controls muted playsinline loop preload="none" poster="assets/video_circuit_speeder8s.jpg" width="1920" height="1080"><source src="assets/video_circuit_speeder8s.mp4" type="video/mp4"></video><figcaption><b>Circuit du Speeder 8 à 12S, 0,54 L/min</b> · l&#x27;eau fait le tour de la boucle, pompe comprise (particules au rythme du calcul, ralenti ×10), gros plan sur la pompe où l&#x27;eau tourne autour de la roue (eau et roue ralenties ×130), puis retour sur le circuit ; seul le circuit est montré</figcaption></figure><div class="texte"><span class="badge essai">En essai</span><h3>Refroidissement liquide : circuit du Speeder 8 à 12S</h3><p class="quoi">Boucle fermée, eau à 0,54 L/min mise en mouvement par la pompe (roue en rotation) : rampe de 9 jets, lames d'eau de 1 mm contre les tôles des ESC, collecteur, retour</p><ul class="kpis"><li><b>0,54 L/min</b><span>débit calculé de la boucle fermée ; un tour en ≈ 2,6 s</span></li></ul><p class=note>Écoulement calculé avec OpenFOAM® v2412 (boucle fermée, roue en rotation à 15 750 tr/min). Dans la tête de pompe, lignes tracées dans le champ de vitesse calculé (moyenné).</p></div><div class="large t812-bloc"><div class="table-ref t812"><table><thead><tr><th>Plein gaz 25 s, départ à 30 °C</th><th>8S</th><th>12S</th></tr></thead><tbody>
 <tr><th scope="row">Courant total (par ESC)</th><td class="val">352 A (88 A)</td><td class="val">235 A (≈ 59 A)</td></tr>
 <tr><th scope="row">Chaleur des 4 ESC à évacuer</th><td class="val">312 W</td><td class="val">191 W</td></tr>
 <tr><th scope="row">MOSFET, au plus chaud</th><td class="val">87 °C</td><td class="val">65 °C</td></tr>
@@ -687,7 +735,7 @@ table { font-variant-numeric: tabular-nums; }
 </tbody></table></div>
 <p class="note">Même puissance (10,4 kW) et même circuit (0,54 L/min, calculé). Températures <b>estimées</b> : modèle
   calculé, pertes supposées (ESC à 97 % ; 12S : pertes du 8S × 0,61, moteurs pas encore choisis). Limites : MOSFET
-  115 °C, résine du cadre 80 °C.</p></div><figure class="large"><img src="assets/rendu_circuit_bloc.jpg" srcset="assets/m/rendu_circuit_bloc.jpg 800w, assets/rendu_circuit_bloc.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Le circuit seul, coloré par la vitesse de l&#x27;eau : refoulement rapide, descente lente dans les lames, tuyau de retour." width="2000" height="947" loading="lazy"><figcaption>Le circuit seul, coloré par la vitesse de l&#x27;eau : refoulement rapide, descente lente dans les lames, tuyau de retour.</figcaption></figure></article></article>
+  115 °C, résine du cadre 80 °C.</p></div><div class="paire5 large"><figure style="flex-grow:2.112"><img src="assets/rendu_circuit_bloc.jpg" srcset="assets/m/rendu_circuit_bloc.jpg 800w, assets/rendu_circuit_bloc.jpg 2000w" sizes="(max-width: 720px) 100vw, 900px" alt="Le circuit seul, coloré par la vitesse de l&#x27;eau : refoulement rapide, descente lente dans les lames, tuyau de retour." width="2000" height="947" loading="lazy"><figcaption><b>Circuit seul, 0,54 L/min</b> · vitesse de l&#x27;eau : refoulement rapide, descente lente dans les lames, tuyau de retour</figcaption></figure><figure style="flex-grow:1.329"><img src="assets/rendu_circuit_pompe.jpg" alt="Pompe vue de l&#x27;avant (15 750 tr/min) : l&#x27;eau tourne à 3 à 4 m/s dans la chambre puis part au refoulement." width="1200" height="903" loading="lazy"><figcaption><b>Pompe vue de l&#x27;avant, 15 750 tr/min</b> · l&#x27;eau tourne à 3 à 4 m/s dans la chambre puis part au refoulement</figcaption></figure></div></article></article>
   </div>
 </section>
 
@@ -710,75 +758,6 @@ table { font-variant-numeric: tabular-nums; }
 
 
 
-<section class="plain" id="validation">
-  <div class="wrap vgrid">
-    <div>
-      <h2>Validation et transparence</h2>
-      <p class="intro read">Cette section concerne <b>TrueFoam GUI</b> et ses calculs faits avec OpenFOAM® v2412. Les chiffres viennent
-        de la fiche de validation du projet, à 120 km/h. La validation publiée porte sur des <b>formes simples</b>
-        (cube, plaque, cylindre, sphère) et sur des <b>drones</b> ; les points faibles connus sont publiés avec le reste.</p>
-    </div>
-
-    
-
-    <div>
-      <h3 style="margin-bottom:12px">Formes simples, réglage sans couches limites</h3>
-      <div class="table-x">
-        <table>
-          <thead><tr><th scope="col">Forme</th><th scope="col">Maillage</th><th scope="col" class="r">Cx calculé</th><th scope="col" class="r">Référence</th><th scope="col" class="r">Écart</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Cube 100 mm</th><td class="mono">4,5,3</td><td class="r">1,17</td><td class="r">≈ 1,05</td><td class="r">+11 %</td></tr>
-            <tr><th scope="row">Plaque 100 × 100 × 5 mm</th><td class="mono">4,5,3</td><td class="r">1,22</td><td class="r">≈ 1,17</td><td class="r">+4 %</td></tr>
-            <tr><th scope="row">Cylindre Ø 30 × 200 mm, en travers</th><td class="mono">4,5,3</td><td class="r">0,42 <span class="note">(non convergé)</span></td><td class="r">≈ 0,8</td><td class="r">−48 %</td></tr>
-            <tr><th scope="row">Sphère Ø 50 mm</th><td class="mono">4,5,3</td><td class="r">0,08</td><td class="r">≈ 0,47</td><td class="r">−83 %</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note" style="margin-top:8px">Références : valeurs classiques de soufflerie (Hoerner). Inclinaison 0°, air ρ = 1,2 kg/m³.</p>
-    </div>
-
-    <div class="prod-body">
-      <div class="stack read">
-        <h3>Ce qui marche bien</h3>
-        <p>Les pièces à <b>arêtes vives</b> (cadre carbone, plaques) : le décollement est fixé par les arêtes et l'écart
-          baisse nettement avec le maillage (plaque : +15 % en maillage grossier, +4 % en maillage fin).</p>
-        <h3>Limite connue : les formes rondes</h3>
-        <p>Les pièces <b>rondes et lisses</b> (cloches moteur, caméras, antennes) sont sous-estimées. Sans couches limites,
-          la couche limite n'est pas résolue : l'air reste collé trop longtemps (sphère : décollement vers 155° au lieu
-          de 80–85°). Avec 5 couches limites, le Cx de la sphère passe de 0,09 à 0,27 et celui
-          du cylindre de 0,40 à 0,53, encore sous les références.</p>
-      </div>
-      <div class="stack">
-        <div class="table-x">
-          <table>
-            <thead><tr><th scope="col">V2V 3″, 35°, 120 km/h</th><th scope="col" class="r">Cellules</th><th scope="col" class="r">S·Cx</th></tr></thead>
-            <tbody>
-              <tr><td>Sans couches limites</td><td class="r">1 200 581</td><td class="r">49,5 cm²</td></tr>
-              <tr><td>5 couches</td><td class="r">1 412 027</td><td class="r">62,3 cm²</td></tr>
-              <tr><td>5 couches, pose améliorée</td><td class="r">1 454 602</td><td class="r">62,9 cm²</td></tr>
-              <tr><td><b>5 couches, moteur final</b></td><td class="r">1 455 273</td><td class="r hl">62,6 cm²</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="scope">
-          <h3>Domaine de validité</h3>
-          <ul class="feat">
-            <li>Air <b>incompressible</b> : les effets de compressibilité ne sont pas modélisés.</li>
-            <li>Objet <b>isolé</b> dans un courant d'air uniforme : le sol n'est pas représenté (côtés du domaine
-              glissants).</li>
-            <li>RANS stationnaire k-ω SST par défaut ; calcul instationnaire en option.</li>
-            <li>Formes rondes et lisses sous-estimées (voir ci-contre) ; autres objets que les drones : pas encore de
-              validation publiée.</li>
-          </ul>
-        </div>
-        <p class="note">Tous ces calculs sont convergés. Règle suivie par le logiciel : un calcul divergé ou non convergé est
-          signalé comme tel, et ce qui n'est pas calculé n'est pas affiché.</p>
-      </div>
-    </div>
-<div class="refs5"><h3>Écart aux valeurs de référence connues</h3><p class="statuts5"><span class="badge ok">Validé</span> dans un critère fixé à l'avance, sur une référence reconnue, sans dépendre du maillage · <span class="badge neutre">Cohérent</span> bon ordre de grandeur, hors critère · <span class="badge essai">En essai</span> fonction en cours de validation · <span class="badge neutre">Limite connue</span> écart connu et publié · <span class="badge neutre">Non tenu</span> critère manqué, publié</p><p class="intro read">Critère d'écart fixé avant chaque essai ; la barre montre l'écart, la bande verte le critère.</p><div class="table-ref"><table><thead><tr><th>Essai</th><th>Référence connue</th><th>Écart</th><th class="barre">−45 %&nbsp;&nbsp;·&nbsp;&nbsp;0&nbsp;&nbsp;·&nbsp;&nbsp;+30 %</th><th>Critère</th><th>Statut</th></tr></thead><tbody><tr><th scope="row">Carène Wigley, vagues et résistance</th><td class="ref">essais ITTC, université de Tokyo (1982)</td><td class="val">+0,9 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="138.3" y="3" width="33.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="154.8" y="8" width="6.0" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">± 5 %</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Tuyau droit, laminaire</th><td class="ref">théorie 64/Re</td><td class="val">−0,6 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="149.8" y="8" width="6.0" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Tuyau droit, turbulent</th><td class="ref">loi de Blasius</td><td class="val">+2 à +6 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="161.4" y="8" width="13.2" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Circuit tuyau + coude 90°</th><td class="ref">corrélations de perte de charge</td><td class="val">+4 à +8 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="168.0" y="8" width="13.2" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Début de cavitation, ellipsoïde 3:1</th><td class="ref">solution exacte (Lamb)</td><td class="val">+4,7 à +5,5 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="168.7" y="8" width="6.0" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Même objet dans l&#x27;eau et dans l&#x27;air</th><td class="ref">similitude (même Reynolds)</td><td class="val">−0,15 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="151.3" y="8" width="6.0" height="10" rx="4" fill="#1f5fa8"/></svg></td><td class="crit">—</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Plaque plane, traînée</th><td class="ref">soufflerie (Hoerner)</td><td class="val">+4 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="165.0" y="8" width="6.0" height="10" rx="4" fill="#9aa7b8"/></svg></td><td class="crit">—</td><td><span class="badge neutre">Cohérent</span></td></tr><tr><th scope="row">Coude 90° seul</th><td class="ref">Ito, Rennels, Miller</td><td class="val">+13 à +25 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="197.8" y="8" width="39.7" height="10" rx="4" fill="#9aa7b8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge neutre">Cohérent</span></td></tr><tr><th scope="row">Thermique, cylindre chauffé</th><td class="ref">Churchill-Bernstein</td><td class="val">0 à +21 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="105.2" y="3" width="99.2" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="154.8" y="8" width="69.4" height="10" rx="4" fill="#9aa7b8"/></svg></td><td class="crit">± 15 %</td><td><span class="badge essai">En essai</span></td></tr><tr><th scope="row">Sphère, traînée</th><td class="ref">soufflerie (Hoerner)</td><td class="val">−42 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="12.9" y="8" width="6.0" height="10" rx="4" fill="#9aa7b8"/></svg></td><td class="crit">—</td><td><span class="badge neutre">Limite connue</span></td></tr><tr><th scope="row">Cavitation, bord fin (NACA 0012)</th><td class="ref">écoulement potentiel</td><td class="val">+0,6 à +10,5 %</td><td class="barre"><svg class="mini-ecart" viewBox="0 0 260 26" aria-hidden="true"><rect x="121.7" y="3" width="66.1" height="20" rx="3" fill="rgba(29,122,74,.14)"/><line x1="154.8" x2="154.8" y1="1" y2="25" stroke="#15233b" stroke-width="1.2"/><rect x="156.8" y="8" width="32.7" height="10" rx="4" fill="#9aa7b8"/></svg></td><td class="crit">± 10 %</td><td><span class="badge neutre">Limite connue</span></td></tr><tr><th scope="row">Flottaison (cube 100 mm)</th><td class="ref">calcul exact</td><td class="val">exact</td><td class="barre"></td><td class="crit">—</td><td><span class="badge ok">Validé</span></td></tr><tr><th scope="row">Profils de vitesse après un coude</th><td class="ref">mesures de Sudo (1998)</td><td class="val">0,12 Ub pour ≤ 0,10 visé</td><td class="barre"></td><td class="crit">—</td><td><span class="badge neutre">Non tenu</span></td></tr></tbody></table></div><h3 class="sous5">Ce que les réglages de TrueFoam apportent</h3><p class="intro read">Même solveur ; 5 couches limites par défaut (au lieu d'un calcul OpenFOAM® en réglages de base) et modèle thermique complet (au lieu du modèle simple). Plus la barre est courte, plus le résultat est proche de la référence.</p><div class="apports"><article class="apport"><h4>Carène Wigley : résistance de la coque</h4><div class="ligne"><span class="lib">OpenFOAM®, sans couches limites</span><b>−18 à −23 %</b><span class="piste"><i class="avant" style="width:100%"></i></span></div><div class="ligne"><span class="lib">TrueFoam, 5 couches limites</span><b class="bleu">+0,9 %</b><span class="piste"><i class="apres" style="width:4%"></i></span></div><p>Écart aux essais ITTC (Tokyo, 1982).</p></article><article class="apport"><h4>Sphère : traînée</h4><div class="ligne"><span class="lib">OpenFOAM®, sans couches limites</span><b>−81 %</b><span class="piste"><i class="avant" style="width:100%"></i></span></div><div class="ligne"><span class="lib">TrueFoam, 5 couches limites</span><b class="bleu">−42 %</b><span class="piste"><i class="apres" style="width:52%"></i></span></div><p>Cx 0,09 puis 0,27, pour 0,47 en soufflerie (forme ronde : limite connue, publiée).</p></article><article class="apport"><h4>Thermique : cylindre à 180 km/h</h4><div class="ligne"><span class="lib">modèle simple</span><b>+10,4 %</b><span class="piste"><i class="avant" style="width:100%"></i></span></div><div class="ligne"><span class="lib">modèle complet</span><b class="bleu">0,0 %</b><span class="piste"><i class="apres" style="width:2%"></i></span></div><p>Écart à la corrélation de Churchill-Bernstein.</p></article><article class="apport"><h4>Thermique : cylindre à 72 km/h</h4><div class="ligne"><span class="lib">modèle simple</span><b>+16,9 %</b><span class="piste"><i class="avant" style="width:100%"></i></span></div><div class="ligne"><span class="lib">modèle complet</span><b class="bleu">+7,1 %</b><span class="piste"><i class="apres" style="width:42%"></i></span></div><p>Écart à la corrélation de Churchill-Bernstein.</p></article><article class="apport cles5"><h4>V2V Speeder 3″ et Multi-Core</h4><ul><li><b>65 %</b><span>de la surface du drone couverte de couches limites (53 % avant la pose en 3 passes)</span></li><li><b>+26 %</b><span>de traînée prise en compte grâce aux couches limites (S·Cx 49,5 → 62,6 cm²)</span></li><li><b>±1 %</b><span>entre les versions openfoam.com proposées par Multi-Core</span></li></ul></article></div><p class="note">Aucun essai comparatif n'a été fait avec d'autres logiciels de CFD : seuls des écarts à des références publiées sont donnés.</p></div>
-  </div>
-</section>
-
 <section class="plain" id="etudes">
   <div class="wrap">
     <span class="surtitre">Galerie</span>
@@ -788,58 +767,87 @@ table { font-variant-numeric: tabular-nums; }
     <div class="filtres" role="toolbar" aria-label="Filtrer les études"><button type="button" class="puce active" data-filtre="tout">Tout</button><button type="button" class="puce" data-filtre="refroidissement-des-mote">Thermique</button><button type="button" class="puce" data-filtre="v2v-speeder-3-dans-l-air">V2V Speeder</button><button type="button" class="puce" data-filtre="towa-5-dans-l-air">TOWA 5″</button><button type="button" class="puce" data-filtre="dans-l-eau">Dans l'eau</button><button type="button" class="puce" data-filtre="formes-et-pieces-etudiee">Formes et pièces</button></div>
 
     <div class="groupe reveal" data-groupe="refroidissement-des-mote"><h3 class="etudes-titre" id="g-refroidissement-des-mote" data-groupe="refroidissement-des-mote">Refroidissement des moteurs : SPEEDER 4</h3>
-    <p class="note" style="margin:0 0 14px">Fonction thermique en essai : comparaisons fiables entre variantes (avec ou sans tuyère, une version
-      contre une autre) ; valeur absolue de la chaleur à ± 25 % près.</p>
     
       <div class="etudes-grille trois">
-        <figure><img src="assets/etudes/speeder4_coupe_1.webp" srcset="assets/m/etudes/speeder4_coupe_1.webp 800w, assets/etudes/speeder4_coupe_1.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Vue d'ensemble : la chaleur part surtout par l'anneau des cloches et l'avant des tuyères." width="1400" height="686" loading="lazy"><figcaption>Vue d'ensemble : la chaleur part surtout par l'anneau des cloches et l'avant des tuyères.</figcaption></figure>
+        <figure><img src="assets/etudes/speeder4_coupe_1.webp" srcset="assets/m/etudes/speeder4_coupe_1.webp 800w, assets/etudes/speeder4_coupe_1.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Vue d'ensemble : la chaleur part surtout par l'anneau des cloches et l'avant des tuyères." width="1400" height="686" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h, vue d'ensemble</b> · chaleur évacuée : surtout par l'anneau des cloches et l'avant des tuyères</figcaption></figure>
         
         
-        <figure><img src="assets/etudes/speeder4_coupe_4.webp" srcset="assets/m/etudes/speeder4_coupe_4.webp 800w, assets/etudes/speeder4_coupe_4.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Chaleur rayonnée par les pièces chaudes, à part de celle emportée par l'air." width="1400" height="686" loading="lazy"><figcaption>Chaleur rayonnée par les pièces chaudes, à part de celle emportée par l'air.</figcaption></figure>
+        <figure><img src="assets/etudes/speeder4_coupe_4.webp" srcset="assets/m/etudes/speeder4_coupe_4.webp 800w, assets/etudes/speeder4_coupe_4.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Chaleur rayonnée par les pièces chaudes, à part de celle emportée par l'air." width="1400" height="686" loading="lazy"><figcaption><b>SPEEDER 4, 400 km/h</b> · chaleur rayonnée par les pièces chaudes, à part de celle emportée par l'air</figcaption></figure>
         
       </div>
 
     </div>
 <div class="groupe reveal" data-groupe="v2v-speeder-3-dans-l-air"><h3 class="etudes-titre" id="g-v2v-speeder-3-dans-l-air" data-groupe="v2v-speeder-3-dans-l-air">V2V Speeder 3″ dans l'air</h3>
       <div class="etudes-grille">
-        <figure><img src="assets/etudes/v2v_pression_0.webp" alt="Face au vent (0°) : pression sur le drone, du rouge (surpression) au bleu (dépression)." width="1200" height="800" loading="lazy"><figcaption>Face au vent (0°) : pression sur le drone, du rouge (surpression) au bleu (dépression).</figcaption></figure>
-        <figure><img src="assets/etudes/v2v_pression_45.webp" alt="Incliné à 45° : pression sur le drone." width="1200" height="800" loading="lazy"><figcaption>Incliné à 45° : pression sur le drone.</figcaption></figure>
-        <figure><img src="assets/etudes/v2v_sillage_45.webp" srcset="assets/m/etudes/v2v_sillage_45.webp 800w, assets/etudes/v2v_sillage_45.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Sillage derrière le drone incliné à 45°." width="1400" height="560" loading="lazy"><figcaption>Sillage derrière le drone incliné à 45°.</figcaption></figure>
-        <figure><img src="assets/etudes/gui_coupe_vitesse.webp" alt="Coupe de côté : vitesse de l'air autour du drone, avec flèches." width="1122" height="460" loading="lazy"><figcaption>Coupe de côté : vitesse de l'air autour du drone, avec flèches.</figcaption></figure>
+        <figure><img src="assets/etudes/v2v_pression_0.webp" alt="Face au vent (0°) : pression sur le drone, du rouge (surpression) au bleu (dépression)." width="1200" height="800" loading="lazy"><figcaption><b>V2V 3″, face au vent (0°)</b> · pression sur le drone, du rouge (surpression) au bleu (dépression)</figcaption></figure>
+        <figure><img src="assets/etudes/v2v_pression_45.webp" alt="Incliné à 45° : pression sur le drone." width="1200" height="800" loading="lazy"><figcaption><b>V2V 3″, incliné à 45°</b> · pression sur le drone</figcaption></figure>
+        <figure><img src="assets/etudes/v2v_sillage_45.webp" srcset="assets/m/etudes/v2v_sillage_45.webp 800w, assets/etudes/v2v_sillage_45.webp 1400w" sizes="(max-width: 720px) 100vw, 900px" alt="Sillage derrière le drone incliné à 45°." width="1400" height="560" loading="lazy"><figcaption><b>V2V 3″, incliné à 45°</b> · sillage derrière le drone</figcaption></figure>
+        <figure><img src="assets/etudes/gui_coupe_vitesse.webp" alt="Coupe de côté : vitesse de l'air autour du drone, avec flèches." width="1122" height="460" loading="lazy"><figcaption><b>V2V 3″, coupe de côté</b> · vitesse de l'air autour du drone, avec flèches</figcaption></figure>
       </div>
 
     </div>
 <div class="groupe reveal" data-groupe="towa-5-dans-l-air"><h3 class="etudes-titre" id="g-towa-5-dans-l-air" data-groupe="towa-5-dans-l-air">TOWA 5″ dans l'air</h3>
       <div class="etudes-grille">
-        <figure><img src="assets/etudes/towa_pression_35.webp" alt="Incliné à 35° : pression sur le châssis." width="680" height="450" loading="lazy"><figcaption>Incliné à 35° : pression sur le châssis.</figcaption></figure>
-        <figure><img src="assets/etudes/gui_etude_1.webp" alt="Pression vue de dessus." width="960" height="540" loading="lazy"><figcaption>Pression vue de dessus.</figcaption></figure>
-        <figure><img src="assets/etudes/gui_etude_2.webp" alt="Vue de côté." width="960" height="540" loading="lazy"><figcaption>Vue de côté.</figcaption></figure>
-        <figure><img src="assets/etudes/gui_etude_3.webp" alt="Dans le vent, incliné à 45°." width="960" height="540" loading="lazy"><figcaption>Dans le vent, incliné à 45°.</figcaption></figure>
+        <figure><img src="assets/etudes/towa_pression_35.webp" alt="Incliné à 35° : pression sur le châssis." width="680" height="450" loading="lazy"><figcaption><b>TOWA 5″, incliné à 35°</b> · pression (Cp) sur le châssis</figcaption></figure>
+        <figure><img src="assets/etudes/gui_etude_1.webp" alt="Pression vue de dessus." width="960" height="540" loading="lazy"><figcaption><b>TOWA 5″, vue de dessus</b> · pression sur le châssis</figcaption></figure>
+        <figure><img src="assets/etudes/gui_etude_2.webp" alt="Vue de côté." width="960" height="540" loading="lazy"><figcaption><b>TOWA 5″, vue de côté</b> · pression sur le châssis</figcaption></figure>
+        <figure><img src="assets/etudes/gui_etude_3.webp" alt="Dans le vent, incliné à 45°." width="960" height="540" loading="lazy"><figcaption><b>TOWA 5″, incliné à 45°</b> · pression sur le châssis, particules dans le vent</figcaption></figure>
       </div>
 
     </div>
 <div class="groupe reveal" data-groupe="dans-l-eau"><h3 class="etudes-titre" id="g-dans-l-eau" data-groupe="dans-l-eau">Dans l'eau</h3>
       <div class="etudes-grille trois">
-        <figure><img src="assets/etudes/eau_tuyau_droit.webp" srcset="assets/m/etudes/eau_tuyau_droit.webp 800w, assets/etudes/eau_tuyau_droit.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Tuyau droit dans l'eau : pression le long des parois." width="1396" height="706" loading="lazy"><figcaption>Tuyau droit dans l'eau : pression le long des parois.</figcaption></figure>
-        <figure><img src="assets/etudes/eau_coude_90.webp" srcset="assets/m/etudes/eau_coude_90.webp 800w, assets/etudes/eau_coude_90.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Coude 90° dans un tuyau : pression sur les parois." width="1396" height="706" loading="lazy"><figcaption>Coude 90° dans un tuyau : pression sur les parois.</figcaption></figure>
-        <figure><img src="assets/etudes/eau_cube_flottaison.webp" srcset="assets/m/etudes/eau_cube_flottaison.webp 800w, assets/etudes/eau_cube_flottaison.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Cube de 100 mm à la flottaison : tirant d'eau et partie immergée." width="1396" height="706" loading="lazy"><figcaption>Cube de 100 mm à la flottaison : tirant d'eau et partie immergée.</figcaption></figure>
-        <figure><img src="assets/etudes/eau_ellipsoide.webp" srcset="assets/m/etudes/eau_ellipsoide.webp 800w, assets/etudes/eau_ellipsoide.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Ellipsoïde dans l'eau : pression et contrôle de cavitation." width="1396" height="706" loading="lazy"><figcaption>Ellipsoïde dans l'eau : pression et contrôle de cavitation.</figcaption></figure>
-        <figure><img src="assets/etudes/eau_v2v.webp" srcset="assets/m/etudes/eau_v2v.webp 800w, assets/etudes/eau_v2v.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="V2V Speeder 3″ immergé : pression sur le drone." width="1396" height="706" loading="lazy"><figcaption>V2V Speeder 3″ immergé : pression sur le drone.</figcaption></figure>
+        <figure><img src="assets/etudes/eau_tuyau_droit.webp" srcset="assets/m/etudes/eau_tuyau_droit.webp 800w, assets/etudes/eau_tuyau_droit.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Tuyau droit dans l'eau : pression le long des parois." width="1396" height="706" loading="lazy"><figcaption><b>Tuyau droit, eau</b> · pression le long des parois</figcaption></figure>
+        <figure><img src="assets/etudes/eau_coude_90.webp" srcset="assets/m/etudes/eau_coude_90.webp 800w, assets/etudes/eau_coude_90.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Coude 90° dans un tuyau : pression sur les parois." width="1396" height="706" loading="lazy"><figcaption><b>Coude 90°, eau</b> · pression sur les parois</figcaption></figure>
+        <figure><img src="assets/etudes/eau_cube_flottaison.webp" srcset="assets/m/etudes/eau_cube_flottaison.webp 800w, assets/etudes/eau_cube_flottaison.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Cube de 100 mm à la flottaison : tirant d'eau et partie immergée." width="1396" height="706" loading="lazy"><figcaption><b>Cube de 100 mm, flottaison</b> · tirant d'eau et partie immergée</figcaption></figure>
+        <figure><img src="assets/etudes/eau_ellipsoide.webp" srcset="assets/m/etudes/eau_ellipsoide.webp 800w, assets/etudes/eau_ellipsoide.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="Ellipsoïde dans l'eau : pression et contrôle de cavitation." width="1396" height="706" loading="lazy"><figcaption><b>Ellipsoïde 3:1, eau</b> · pression et contrôle de cavitation</figcaption></figure>
+        <figure><img src="assets/etudes/eau_v2v.webp" srcset="assets/m/etudes/eau_v2v.webp 800w, assets/etudes/eau_v2v.webp 1396w" sizes="(max-width: 720px) 100vw, 900px" alt="V2V Speeder 3″ immergé : pression sur le drone." width="1396" height="706" loading="lazy"><figcaption><b>V2V Speeder 3″ immergé</b> · pression sur le drone</figcaption></figure>
       </div>
 
     </div>
 <div class="groupe reveal" data-groupe="formes-et-pieces-etudiee"><h3 class="etudes-titre" id="g-formes-et-pieces-etudiee" data-groupe="formes-et-pieces-etudiee">Formes et pièces étudiées</h3>
       <div class="etudes-grille quatre">
-        <figure><img src="assets/etudes/obj_v2v_speeder_3p.webp" alt="V2V Speeder 3″, le drone de référence des validations." width="1200" height="900" loading="lazy"><figcaption>V2V Speeder 3″, le drone de référence des validations.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_moteur_f1404.webp" alt="Moteur T-Motor F1404 : refroidissement d'un moteur réel." width="1200" height="900" loading="lazy"><figcaption>Moteur T-Motor F1404 : refroidissement d'un moteur réel.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_moteur_aether1505.webp" alt="Moteur Aether 1505 : cloche en rotation." width="1200" height="900" loading="lazy"><figcaption>Moteur Aether 1505 : cloche en rotation.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_helice_gemfan3525.webp" alt="Hélice Gemfan 3525 : pales en rotation." width="1200" height="900" loading="lazy"><figcaption>Hélice Gemfan 3525 : pales en rotation.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_cube.webp" alt="Cube : traînée." width="1200" height="900" loading="lazy"><figcaption>Cube : traînée.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_plaque.webp" alt="Plaque plane : traînée." width="1200" height="900" loading="lazy"><figcaption>Plaque plane : traînée.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_sphere.webp" alt="Sphère : traînée et couches limites." width="1200" height="900" loading="lazy"><figcaption>Sphère : traînée et couches limites.</figcaption></figure>
-        <figure><img src="assets/etudes/obj_cylindre.webp" alt="Cylindre Ø30 mm : traînée et échange de chaleur." width="1200" height="900" loading="lazy"><figcaption>Cylindre Ø30 mm : traînée et échange de chaleur.</figcaption></figure>
+        <figure><img src="assets/etudes/obj_v2v_speeder_3p.webp" alt="V2V Speeder 3″, le drone de référence des validations." width="1200" height="900" loading="lazy"><figcaption><b>V2V Speeder 3″</b> · drone de référence des validations</figcaption></figure>
+        <figure><img src="assets/etudes/obj_moteur_f1404.webp" alt="Moteur T-Motor F1404 : refroidissement d'un moteur réel." width="1200" height="900" loading="lazy"><figcaption><b>Moteur T-Motor F1404</b> · refroidissement d'un moteur réel</figcaption></figure>
+        <figure><img src="assets/etudes/obj_moteur_aether1505.webp" alt="Moteur Aether 1505 : cloche en rotation." width="1200" height="900" loading="lazy"><figcaption><b>Moteur Aether 1505</b> · cloche en rotation</figcaption></figure>
+        <figure><img src="assets/etudes/obj_helice_gemfan3525.webp" alt="Hélice Gemfan 3525 : pales en rotation." width="1200" height="900" loading="lazy"><figcaption><b>Hélice Gemfan 3525</b> · pales en rotation</figcaption></figure>
+        <figure><img src="assets/etudes/obj_cube.webp" alt="Cube : traînée." width="1200" height="900" loading="lazy"><figcaption><b>Cube de 100 mm</b> · traînée</figcaption></figure>
+        <figure><img src="assets/etudes/obj_plaque.webp" alt="Plaque plane : traînée." width="1200" height="900" loading="lazy"><figcaption><b>Plaque 100 × 100 × 5 mm</b> · traînée</figcaption></figure>
+        <figure><img src="assets/etudes/obj_sphere.webp" alt="Sphère : traînée et couches limites." width="1200" height="900" loading="lazy"><figcaption><b>Sphère Ø 50 mm</b> · traînée et couches limites</figcaption></figure>
+        <figure><img src="assets/etudes/obj_cylindre.webp" alt="Cylindre Ø30 mm : traînée et échange de chaleur." width="1200" height="900" loading="lazy"><figcaption><b>Cylindre Ø 30 mm</b> · traînée et échange de chaleur</figcaption></figure>
       </div>
 </div>
+  </div>
+</section>
+
+<section class="plain" id="validation">
+  <div class="wrap">
+    <span class="surtitre">Validation</span>
+    <h2>Validation et transparence</h2>
+    <p class="intro read">Chaque fonction de <b>TrueFoam GUI</b> (calculs faits avec OpenFOAM® v2412) est comparée à
+      des références publiées : théorie, corrélations, essais de soufflerie ou de bassin, avec un critère d'écart fixé
+      avant l'essai. Les points faibles sont publiés avec le reste.</p>
+    <a class="resume5" href="validation.html" aria-label="Voir le détail des 13 essais"><span class="t">13 essais</span><ul><li><span class="badge ok">Validé</span><b>7</b></li><li><span class="badge neutre">Cohérent</span><b>2</b></li><li><span class="badge essai">En essai</span><b>1</b></li><li><span class="badge neutre">Limite connue</span><b>2</b></li><li><span class="badge neutre">Non tenu</span><b>1</b></li></ul></a>
+    <p class="statuts5"><span class="badge ok">Validé</span> dans un critère fixé à l'avance, sur une référence reconnue, sans dépendre du maillage · <span class="badge neutre">Cohérent</span> bon ordre de grandeur, hors critère · <span class="badge essai">En essai</span> fonction en cours de validation · <span class="badge neutre">Limite connue</span> écart connu et publié · <span class="badge neutre">Non tenu</span> critère manqué, publié</p>
+    <div class="resume5-g">
+      <div><h3>Domaine de validité</h3>
+        <ul class="feat">
+            <li>Air <b>incompressible</b> : les effets de compressibilité ne sont pas modélisés.</li>
+            <li>Objet <b>isolé</b> dans un courant d'air uniforme : le sol n'est pas représenté (côtés du domaine
+              glissants).</li>
+            <li>RANS stationnaire k-ω SST par défaut ; calcul instationnaire en option.</li>
+            <li>Formes rondes et lisses sous-estimées (limite connue) ; autres objets que les drones : pas encore de
+              validation publiée.</li>
+          </ul></div>
+      <div><h3>Règles suivies</h3>
+        <ul class="feat">
+          <li>Un calcul divergé ou non convergé est signalé comme tel ; ce qui n'est pas calculé n'est pas affiché.</li>
+          <li>Aucun essai comparatif n'a été fait avec d'autres logiciels de CFD : seuls des écarts à des références
+            publiées sont donnés.</li>
+          <li>Chiffres de la fiche de validation du projet, mise à jour le 21 octobre 2026.</li>
+        </ul></div>
+    </div>
+    <p class="cta" style="margin-top:22px"><a class="btn ghost" href="validation.html">Voir le détail des 13 essais</a></p>
   </div>
 </section>
 
@@ -847,7 +855,7 @@ table { font-variant-numeric: tabular-nums; }
   <div class="wrap">
     <div class="prod-head">
       <div class="t">
-        <span class="pill ok">En service · version publique</span>
+        <span class="pill ok">Disponible · version publique</span>
         <h2>TrueFoam GUI</h2>
         <p class="sub">Core CFD Workspace pour OpenFOAM® v2412. La CFD sur PC, sans ligne de commande.</p>
       </div>
@@ -862,6 +870,22 @@ table { font-variant-numeric: tabular-nums; }
           modifié par TrueFoam GUI. L'interface prépare les fichiers de calcul, suit le calcul et montre les résultats.</p>
         <p>Pour qui le préfère, les résultats s'ouvrent aussi dans ParaView, logiciel de visualisation externe et gratuit de
           Kitware, que l'utilisateur installe lui-même s'il le souhaite : ParaView n'est pas livré avec TrueFoam GUI.</p>
+        <div>
+          <h3 style="margin-bottom:10px">Installer</h3>
+          <p>Quatre étapes, détaillées dans le <a href="#mode-emploi" data-ouvrir>mode d'emploi</a> : Docker Desktop,
+            image officielle d'OpenFOAM, <span class="mono">TrueFOAM.exe</span>, puis « Construire le moteur ».</p>
+        </div>
+        <dl class="facts" style="margin-top:8px">
+          <dt>Statut</dt><dd>Disponible, version publique</dd>
+          <dt>Licence</dt><dd>Logiciel propriétaire, code source non publié</dd>
+          <dt>Solveur</dt><dd>OpenFOAM v2412, téléchargé par l'utilisateur et lancé comme programme séparé dans Docker Desktop ; ni inclus ni modifié</dd>
+          <dt>Système</dt><dd>Windows 10 ou 11 64 bits, 16 Go de RAM conseillés</dd>
+          <dt>Prérequis</dt><dd>Docker Desktop (option WSL 2) et l'image officielle <span class="mono">opencfd/openfoam-default:2412</span>, installés par l'utilisateur</dd>
+          <dt>Études</dt><dd><span class="mono">C:\Users\&lt;vous&gt;\TrueFOAM\</span></dd>
+        </dl>
+      </div>
+
+      <div class="stack">
         <h3>Ce qu'il fait</h3>
         <ul class="feat">
           <li><b>Étude guidée</b> : STL et orientation (orientation automatique, objet affiché dans sa boîte à air),
@@ -879,33 +903,10 @@ table { font-variant-numeric: tabular-nums; }
             Étude &gt; Ouvrir un calcul du calculateur.</li>
           <li><b>Hélices en disques d'action</b> : perte de poussée due au souffle sur le châssis et effet du souffle
             sur la traînée.</li>
-          <li><span class="pill try">Nouveau · en essai</span> <b>Pales en rotation</b> (référentiel tournant, MRF) :
+          <li><span class="badge essai">En essai</span> <b>Pales en rotation</b> (référentiel tournant, MRF) :
             poussée, couple et puissance par hélice. Premier essai réel fait sur un TOWA 5″ ; validation sur une vraie
             hélice à venir.</li>
-        </ul>
-      </div>
-
-      <div class="stack">
-        <dl class="facts">
-          <dt>Statut</dt><dd>En service, version publique</dd>
-          <dt>Licence</dt><dd>Logiciel propriétaire, code source non publié</dd>
-          <dt>Solveur</dt><dd>OpenFOAM v2412, téléchargé par l'utilisateur et lancé comme programme séparé dans Docker Desktop ; ni inclus ni modifié</dd>
-          <dt>Système</dt><dd>Windows 10 ou 11 64 bits, 16 Go de RAM conseillés</dd>
-          <dt>Prérequis</dt><dd>Docker Desktop (option WSL 2) et l'image officielle <span class="mono">opencfd/openfoam-default:2412</span>, installés par l'utilisateur</dd>
-          <dt>Études</dt><dd><span class="mono">C:\Users\&lt;vous&gt;\TrueFOAM\</span></dd>
-        </dl>
-        <div>
-          <h3 style="margin-bottom:10px">Installer</h3>
-          <ol class="steps">
-            <li><span>Installer et lancer Docker Desktop (pastille « Engine running » verte).</span></li>
-            <li><span>Télécharger vous-même l'image officielle d'OpenFOAM, une fois : <span class="mono">docker pull opencfd/openfoam-default:2412</span></span></li>
-            <li><span>Dézipper <span class="mono">TrueFOAM-Windows.zip</span> et lancer <span class="mono">TrueFOAM.exe</span>.</span></li>
-            <li><span>Ruban Exécuter : cliquer sur « Construire le moteur » (une fois, 1 à 5 minutes) jusqu'au vert « Moteur prêt ». Le moteur est construit sur votre PC, à partir de l'image téléchargée.</span></li>
-          </ol>
-        </div>
-        <p class="note">Logiciel non signé : Windows peut afficher « Windows a protégé votre ordinateur ». Cliquer sur
-          « Informations complémentaires », puis « Exécuter quand même ».</p>
-      </div>
+        </ul>      </div>
     </div>
   </div>
 </section>
@@ -930,9 +931,6 @@ table { font-variant-numeric: tabular-nums; }
           l'utilisateur et lancée comme programme séparé, sans être incluse ni modifiée ; l'interface propose la
           version dans le panneau du moteur et l'enregistre avec chaque calcul. Il s'installe à côté de TrueFoam GUI
           sans rien partager avec lui (exécutable, réglages et dossier des études séparés).</p>
-        <p><b>Une version n'est proposée qu'après sa validation</b> : la série cube, plaque, cylindre, sphère et drone
-          V2V est recalculée avec chaque version et comparée à OpenFOAM v2412, calculs convergés et rendu complet dans
-          l'interface.</p>
         <div class="cta" style="margin-top:4px">
           <a class="btn ghost" href="https://github.com/Jschmiedd/TrueFoam-GUI-Multi-Core/releases" target="_blank" rel="noopener">Télécharger TrueFoam GUI Multi-Core</a>
         </div>
@@ -949,12 +947,12 @@ table { font-variant-numeric: tabular-nums; }
         <p class="note">Modèles de turbulence : k-ω SST, Spalart-Allmaras et k-ε validés ; k-ε réalisable non proposé
           là où il n'est pas validé ; laminaire et k-ω SST LM (transition) non validés. v2312 : non validée, non
           proposée.</p>
+        <p style="margin-top:6px"><b>Une version n'est proposée qu'après sa validation</b> : la série cube, plaque, cylindre, sphère et drone
+          V2V est recalculée avec chaque version et comparée à OpenFOAM v2412, calculs convergés et rendu complet dans
+          l'interface.</p>
       </div>
     </div>
     <div class="prod-body" style="margin-top:28px">
-      <div class="stack read">
-        <h3>Ce qu'il fait</h3><p>Toutes les fonctions de TrueFoam GUI (voir ci-dessus), avec le choix de la version d'OpenFOAM®.</p>
-      </div>
       <div class="stack">
         <dl class="facts">
           <dt>Statut</dt><dd>Disponible, version 1.0</dd>
@@ -964,6 +962,8 @@ table { font-variant-numeric: tabular-nums; }
           <dt>Prérequis</dt><dd>Docker Desktop (option WSL 2) et l'image de la version d'OpenFOAM choisie, installés par l'utilisateur</dd>
           <dt>Études</dt><dd><span class="mono">C:\Users\&lt;vous&gt;\TrueFOAM-MC\</span> (séparé de TrueFoam GUI)</dd>
         </dl>
+      </div>
+      <div class="stack">
         <div>
           <h3 style="margin-bottom:10px">Installer</h3>
           <ol class="steps">
@@ -972,9 +972,8 @@ table { font-variant-numeric: tabular-nums; }
             <li><span>Panneau Exécution : choisir la version d'OpenFOAM, puis ruban Exécuter : « Construire le moteur » jusqu'au vert « Moteur prêt » (l'image officielle de la version est téléchargée si elle manque).</span></li>
           </ol>
         </div>
-        <p class="note">Logiciel non signé : Windows peut afficher « Windows a protégé votre ordinateur ». Cliquer sur
-          « Informations complémentaires », puis « Exécuter quand même ».</p>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -983,7 +982,7 @@ table { font-variant-numeric: tabular-nums; }
   <div class="wrap">
     <div class="prod-head">
       <div class="t">
-        <span class="pill dev">Solveur propriétaire · en cours de branchement sur l'interface</span>
+        <span class="pill dev">En développement</span>
         <h2>TrueFoam Engine</h2>
         <p class="sub">Le solveur CFD propriétaire de la famille TrueFoam.</p>
       </div>
@@ -996,8 +995,15 @@ table { font-variant-numeric: tabular-nums; }
           les téléchargements et la validation.</p>
         <p>Son interface reprend l'environnement de travail de TrueFoam GUI : étude guidée, vue 3D et résultats viennent
           du même squelette d'interface.</p>
+      </div>
+
+      <div class="stack">
+        <dl class="facts">
+          <dt>Statut</dt><dd>En développement : solveur en cours de branchement sur son interface</dd>
+          <dt>Licence</dt><dd>Propriétaire, non open source</dd>
+        </dl>
         <div class="nouveaute5">
-          <span class="badge essai">Nouveauté · résultats préliminaires</span>
+          <span class="badge essai">En essai · résultats préliminaires</span>
           <p><b>Nouvelle loi de paroi : la traînée ne dépend presque plus de la finesse du maillage.</b></p>
           <ul class="kpis">
             <li><b>8,4 cm² ± 2,5 %</b><span>S·Cx du V2V Speeder 3″ à 400 km/h, calcul convergé (mailles de 0,79 mm) ;
@@ -1009,13 +1015,6 @@ table { font-variant-numeric: tabular-nums; }
             validation : deux formes contrôlées, vent de face, comparées à un autre logiciel de calcul et pas encore à
             une mesure en soufflerie.</p>
         </div>
-      </div>
-
-      <div class="stack">
-        <dl class="facts">
-          <dt>Statut</dt><dd>En cours de branchement sur son interface</dd>
-          <dt>Licence</dt><dd>Propriétaire, non open source</dd>
-        </dl>
       </div>
     </div>
   </div>
@@ -1039,7 +1038,7 @@ table { font-variant-numeric: tabular-nums; }
             double-cliquer sur <span class="mono">TrueFOAM.exe</span>. Logiciel non signé : « Informations
             complémentaires », puis « Exécuter quand même ».</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_fenetre.jpg" alt="Fenêtre de TrueFoam GUI au démarrage" loading="lazy"><figcaption>La fenêtre au démarrage : menus, ruban, arbre de l'étude, panneau de réglages, vue 3D et sortie.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_fenetre.jpg" alt="Fenêtre de TrueFoam GUI au démarrage" loading="lazy"><figcaption><b>TrueFoam GUI au démarrage</b> · menus, ruban, arbre de l'étude, panneau de réglages, vue 3D et sortie</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Préparer le moteur de calcul</h3><p>Ruban <b>Exécuter</b> : le bouton du moteur dit s'il est prêt.</p>
@@ -1048,7 +1047,7 @@ table { font-variant-numeric: tabular-nums; }
           <li><b>Orange, « Construire le moteur »</b> : cliquer une fois (1 à 5 minutes).</li>
           <li><b>Rouge, « Moteur bloqué »</b> : lancer Docker Desktop, puis « Vérifier le solveur ».</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_moteur.jpg" alt="Ruban Exécuter avec le moteur prêt" loading="lazy"><figcaption>Ruban Exécuter : le moteur est prêt.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_moteur.jpg" alt="Ruban Exécuter avec le moteur prêt" loading="lazy"><figcaption><b>Ruban Exécuter</b> · le moteur est prêt</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Importer et orienter le STL</h3><ul class="feat">
@@ -1059,7 +1058,7 @@ table { font-variant-numeric: tabular-nums; }
           <li>Contrôle : « Aucun trou » = objet fermé ; sinon les trous s'affichent en rouge et <b>Réparer</b> écrit un
             STL corrigé à côté de l'original.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/geometrie_v2v.jpg" alt="Panneau Géométrie avec le drone dans sa boîte à air" loading="lazy"><figcaption>Le nez (flèche orange) face au vent (flèche bleue), le haut (flèche verte) vers le haut.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/geometrie_v2v.jpg" alt="Panneau Géométrie avec le drone dans sa boîte à air" loading="lazy"><figcaption><b>Panneau Géométrie, V2V 3″</b> · le nez (flèche orange) face au vent (flèche bleue), le haut (flèche verte) vers le haut</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Régler l'écoulement et la turbulence</h3><ul class="feat">
@@ -1069,7 +1068,7 @@ table { font-variant-numeric: tabular-nums; }
           <li><b>Turbulence</b> : k-ω SST conseillé ; qualité standard (convergence 3 %) ou maximale (1 %) ; régime
             stationnaire ou instationnaire.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_ecoulement.jpg" alt="Panneau Écoulement et air" loading="lazy"><figcaption>Panneau Écoulement et air : vitesse, inclinaisons, air.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_ecoulement.jpg" alt="Panneau Écoulement et air" loading="lazy"><figcaption><b>Panneau Écoulement et air</b> · vitesse, inclinaisons, air</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Domaine et maillage</h3><ul class="feat">
@@ -1079,7 +1078,7 @@ table { font-variant-numeric: tabular-nums; }
             mesure ; arêtes vives.</li>
           <li><b>Mailler seulement</b> construit le maillage en quelques minutes pour vérifier cellules et qualité.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_zones.jpg" alt="Zone de raffinement devant la caméra du drone" loading="lazy"><figcaption>Une zone de raffinement (en orange) placée devant la caméra.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_zones.jpg" alt="Zone de raffinement devant la caméra du drone" loading="lazy"><figcaption><b>Zone de raffinement, V2V 3″</b> · zone (en orange) placée devant la caméra</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Lancer le calcul</h3><ul class="feat">
@@ -1089,7 +1088,7 @@ table { font-variant-numeric: tabular-nums; }
           <li><b>Exécuter l'étude</b> : journal et convergence en direct en bas, phase et temps restant dans la barre
             d'état ; un calcul non convergé est signalé comme tel.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_execution.jpg" alt="Panneau Exécution avec l'estimation" loading="lazy"><figcaption>Estimation affichée avant de lancer : environ 1,3 million de cellules et 19 min (± 50 %) sur 4 cœurs pour ce cas.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_execution.jpg" alt="Panneau Exécution avec l'estimation" loading="lazy"><figcaption><b>Panneau Exécution, V2V 3″</b> · estimation affichée avant de lancer : environ 1,3 million de cellules et 19 min (± 50 %) sur 4 cœurs</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Lire les résultats</h3><ul class="feat">
@@ -1102,7 +1101,7 @@ table { font-variant-numeric: tabular-nums; }
         </ul>
         <p class="note">Captures d'un vrai calcul fait avec les réglages par défaut (5 couches limites) : V2V Speeder 3″
           à 35°, 120 km/h, 1,45 million de cellules, convergé, S·Cx 62,6 cm² (voir <a href="#validation">Validation</a>).</p></div>
-        <div class="pas-images"><figure><img src="assets/pression_cp_v2v.jpg" alt="Carte de pression Cp et tableau des résultats" loading="lazy"><figcaption>Carte de Cp et tableau des résultats (réglages par défaut, S·Cx 62,6 cm², convergé).</figcaption></figure><figure><img src="assets/me_coupe_libre.jpg" alt="Coupe libre 3D placée à la souris" loading="lazy"><figcaption>Coupe libre 3D de la vitesse, placée et tournée à la souris.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/pression_cp_v2v.jpg" alt="Carte de pression Cp et tableau des résultats" loading="lazy"><figcaption><b>V2V 3″, 35°, 120 km/h, réglages par défaut</b> · carte de Cp et tableau des résultats (S·Cx 62,6 cm², convergé)</figcaption></figure><figure><img src="assets/me_coupe_libre.jpg" alt="Coupe libre 3D placée à la souris" loading="lazy"><figcaption><b>Coupe libre 3D</b> · vitesse, coupe placée et tournée à la souris</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Exporter et partager</h3><ul class="feat">
@@ -1112,7 +1111,7 @@ table { font-variant-numeric: tabular-nums; }
             ouvrir les fichiers dans ParaView, logiciel gratuit de Kitware que vous installez vous-même.</li>
           <li><b>Enregistrer l'état de la vue</b> (Ctrl+Maj+S) pour la retrouver à l'identique.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/trainee_par_piece_v2v.jpg" alt="Traînée par pièce sur le V2V Speeder" loading="lazy"><figcaption>Traînée par pièce dans TrueFoam GUI, reprise aussi dans le rapport PDF.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/trainee_par_piece_v2v.jpg" alt="Traînée par pièce sur le V2V Speeder" loading="lazy"><figcaption><b>Traînée par pièce, V2V 3″</b> · dans TrueFoam GUI, reprise aussi dans le rapport PDF</figcaption></figure></div>
       </li>
       <li class="pas">
         <div class="pas-texte"><h3>Ouvrir un calcul du calculateur</h3><ul class="feat">
@@ -1124,7 +1123,7 @@ table { font-variant-numeric: tabular-nums; }
           <li>Limite : ces zips ne contiennent pas tout le volume du calcul ; coupe libre, tourbillons et y+ restent
             réservés aux calculs faits sur le PC.</li>
         </ul></div>
-        <div class="pas-images"><figure><img src="assets/me_calculateur.jpg" alt="Calcul du calculateur ouvert dans TrueFoam GUI" loading="lazy"><figcaption>Un calcul du calculateur (V2V Speeder, 90° et 45°, 120 km/h) ouvert dans TrueFoam GUI.</figcaption></figure></div>
+        <div class="pas-images"><figure><img src="assets/me_calculateur.jpg" alt="Calcul du calculateur ouvert dans TrueFoam GUI" loading="lazy"><figcaption><b>Calcul du calculateur, V2V Speeder, 90° et 45°, 120 km/h</b> · ouvert dans TrueFoam GUI</figcaption></figure></div>
       </li>
     </ol>
     <div class="pdf">
@@ -1148,7 +1147,7 @@ table { font-variant-numeric: tabular-nums; }
           OpenFOAM®, lancé comme programme séparé.</p></div></div>
       <div class="dl">
         <article class="carte vert">
-          <span class="badge">En service</span>
+          <span class="badge">Disponible · version publique</span>
           <img src="assets/logo_truefoam_gui.png" alt="Logo TrueFoam GUI" width="600" height="178" loading="lazy">
           <h3>TrueFoam GUI</h3>
           <p class="pourqui">Le choix direct : une version d'OpenFOAM®, la v2412, avec les réglages validés.</p>
@@ -1165,7 +1164,7 @@ table { font-variant-numeric: tabular-nums; }
             proposée.</p>
           <dl class="mini"><dt>Solveur</dt><dd>OpenFOAM® v2406 à v2512, OpenFOAM 11 à 14</dd><dt>Système</dt><dd>Windows 10 ou 11 64 bits</dd>
             <dt>Prérequis</dt><dd>Docker Desktop, image de la version choisie</dd></dl>
-          <div class="actions"><a class="btn primary" href="https://github.com/Jschmiedd/TrueFoam-GUI-Multi-Core/releases" target="_blank" rel="noopener">Télécharger Multi-Core</a>
+          <div class="actions"><a class="btn ghost" href="https://github.com/Jschmiedd/TrueFoam-GUI-Multi-Core/releases" target="_blank" rel="noopener">Télécharger Multi-Core</a>
             <a class="lien" href="#multi-core">Fiche produit →</a></div>
         </article>
       </div>
@@ -1177,7 +1176,7 @@ table { font-variant-numeric: tabular-nums; }
       <article class="carte violet large">
         <img src="assets/logo_truefoam_engine.png" alt="Logo TrueFoam Engine" width="600" height="163" loading="lazy">
         <div>
-          <span class="badge">Logiciel privé · en développement</span>
+          <span class="badge">En développement · logiciel privé</span>
           <h3>TrueFoam Engine</h3>
           <p>Le solveur CFD propriétaire de la famille TrueFoam : la technologie de calcul elle-même est développée par
             TrueFoam, code non publié. Son interface reprend l'environnement de travail de TrueFoam GUI : étude guidée,
@@ -1217,7 +1216,7 @@ table { font-variant-numeric: tabular-nums; }
       <p>ParaView® est une marque de Kitware, Inc. ; TrueFoam n'est ni affilié à Kitware ni approuvé par Kitware.</p>
     </div>
     <p class="foot-meta">Site mis à jour le 26 octobre 2026 · chiffres de validation : fiche de validation du projet, mise à jour le 21 octobre 2026.</p>
-    <p class="foot-links"><a href="https://jschmiedd.github.io/" target="_blank" rel="noopener">Site du calculateur</a></p>
+    <p class="foot-links"><a href="validation.html">Validation : détail des essais</a> · <a href="https://jschmiedd.github.io/" target="_blank" rel="noopener">Site du calculateur</a></p>
   </div>
 </footer>
 
@@ -1256,6 +1255,9 @@ table { font-variant-numeric: tabular-nums; }
     });
     loupe.addEventListener('click', e => { if (e.target === loupe || e.target.classList.contains('fermer')) loupe.close(); });
   }
+  // lien « mode d'emploi » : ouvre le pas à pas replié
+  document.querySelectorAll('a[data-ouvrir]').forEach(a => a.addEventListener('click', () => {
+    const d = document.querySelector('#mode-emploi details'); if (d) d.open = true; }));
   // barre de navigation : ombre au défilement
   const nav = document.querySelector('.nav4');
   addEventListener('scroll', () => nav.classList.toggle('ombre', scrollY > 20), {passive: true});
